@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/homeVillage.unity
+    guid: 6e153a220e509476fb33b0ed13eeb4ca
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
