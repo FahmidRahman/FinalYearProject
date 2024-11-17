@@ -3,7 +3,7 @@ guid: 86a8ec343574d3d44b17a10816517fc7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -3906,189 +3909,188 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_Animated_Lava_23: 952133723
-      FD_Animated_Lava_95: 557096292
-      FD_Animated_Lava_105: -833647499
-      FD_Animated_Lava_108: -294718564
-      FD_Animated_Lava_127: -733697320
-      FD_Animated_Lava_132: -822045311
-      FD_Animated_Lava_128: 452601231
-      FD_Animated_Lava_89: -747437407
-      FD_Animated_Lava_119: 1516786534
-      FD_Animated_Lava_106: 1292197455
-      FD_Animated_Lava_28: 1305017526
-      FD_Animated_Lava_85: -794084951
-      FD_Animated_Lava_64: 1334463078
-      FD_Animated_Lava_148: 3053648
-      FD_Animated_Lava_98: -1658700934
-      FD_Animated_Lava_100: -1055651467
-      FD_Animated_Lava_6: 1552493826
-      FD_Animated_Lava_20: -782110595
-      FD_Animated_Lava_156: -2088323714
-      FD_Animated_Lava_77: -1656402654
-      FD_Animated_Lava_82: 182178679
-      FD_Animated_Lava_116: -924442483
-      FD_Animated_Lava_134: 321577925
-      FD_Animated_Lava_13: -1561649332
-      FD_Animated_Lava_122: -212386535
-      FD_Animated_Lava_41: -1364765049
-      FD_Animated_Lava_75: -1531476807
-      FD_Animated_Lava_45: 570545927
-      FD_Animated_Lava_104: -1018551891
-      FD_Animated_Lava_7: 514893776
-      FD_Animated_Lava_144: -1123574829
-      FD_Animated_Lava_30: -1383740064
-      FD_Animated_Lava_17: 1427709455
-      FD_Animated_Lava_35: 76837924
-      FD_Animated_Lava_143: 2146237470
-      FD_Animated_Lava_177: 692234948
-      FD_Animated_Lava_145: 134767624
-      FD_Animated_Lava_19: -2097279449
-      FD_Animated_Lava_78: 589942427
-      FD_Animated_Lava_94: -1078369576
-      FD_Animated_Lava_66: -2126599392
-      FD_Animated_Lava_51: 807905328
-      FD_Animated_Lava_69: -1789851107
-      FD_Animated_Lava_8: 229968773
-      FD_Animated_Lava_174: 253374707
-      FD_Animated_Lava_32: 1486248139
-      FD_Animated_Lava_44: 864825500
-      FD_Animated_Lava_62: -878450318
-      FD_Animated_Lava_138: 1425506419
-      FD_Animated_Lava_102: -52182869
-      FD_Animated_Lava_136: -1427123323
-      FD_Animated_Lava_67: 1118247596
-      FD_Animated_Lava_43: -1253440062
-      FD_Animated_Lava_159: 1981967193
+      FD_Animated_Lava_0: 745986523
+      FD_Animated_Lava_1: 1545442264
       FD_Animated_Lava_10: -1634227365
-      FD_Animated_Lava_63: -1960521999
-      FD_Animated_Lava_70: -1039736923
-      FD_Animated_Lava_72: 1839110531
+      FD_Animated_Lava_100: -1055651467
+      FD_Animated_Lava_101: 353600742
+      FD_Animated_Lava_102: -52182869
+      FD_Animated_Lava_103: -209361269
+      FD_Animated_Lava_104: -1018551891
+      FD_Animated_Lava_105: -833647499
+      FD_Animated_Lava_106: 1292197455
+      FD_Animated_Lava_107: -1034307866
+      FD_Animated_Lava_108: -294718564
+      FD_Animated_Lava_109: -628473426
+      FD_Animated_Lava_11: 2036690671
+      FD_Animated_Lava_110: -450677196
+      FD_Animated_Lava_111: 1559454284
+      FD_Animated_Lava_112: -1320265180
+      FD_Animated_Lava_113: 715952394
+      FD_Animated_Lava_114: 1804562546
+      FD_Animated_Lava_115: 1321964167
+      FD_Animated_Lava_116: -924442483
+      FD_Animated_Lava_117: 749076079
+      FD_Animated_Lava_118: 345491967
+      FD_Animated_Lava_119: 1516786534
+      FD_Animated_Lava_12: -287144007
+      FD_Animated_Lava_120: 440035039
+      FD_Animated_Lava_121: 1975423714
+      FD_Animated_Lava_122: -212386535
+      FD_Animated_Lava_123: -1382976959
+      FD_Animated_Lava_124: 256099936
+      FD_Animated_Lava_125: -1667424283
+      FD_Animated_Lava_126: 892499193
+      FD_Animated_Lava_127: -733697320
+      FD_Animated_Lava_128: 452601231
+      FD_Animated_Lava_129: -546740951
+      FD_Animated_Lava_13: -1561649332
+      FD_Animated_Lava_130: -644867924
+      FD_Animated_Lava_131: -1740518462
+      FD_Animated_Lava_132: -822045311
+      FD_Animated_Lava_133: 344968224
+      FD_Animated_Lava_134: 321577925
+      FD_Animated_Lava_135: 209120169
+      FD_Animated_Lava_136: -1427123323
+      FD_Animated_Lava_137: 777050688
+      FD_Animated_Lava_138: 1425506419
+      FD_Animated_Lava_139: 1900032055
+      FD_Animated_Lava_14: 890471207
+      FD_Animated_Lava_140: 887203627
+      FD_Animated_Lava_141: 1772859342
+      FD_Animated_Lava_142: 1182585312
+      FD_Animated_Lava_143: 2146237470
+      FD_Animated_Lava_144: -1123574829
+      FD_Animated_Lava_145: 134767624
+      FD_Animated_Lava_146: 199382365
+      FD_Animated_Lava_147: 1173308317
+      FD_Animated_Lava_148: 3053648
+      FD_Animated_Lava_149: 1830793087
+      FD_Animated_Lava_15: -663241560
+      FD_Animated_Lava_150: 1969177141
+      FD_Animated_Lava_151: 1267881203
+      FD_Animated_Lava_152: 1674986737
+      FD_Animated_Lava_153: -24027193
+      FD_Animated_Lava_154: -576283400
       FD_Animated_Lava_155: 289559842
+      FD_Animated_Lava_156: -2088323714
+      FD_Animated_Lava_157: -2136429799
+      FD_Animated_Lava_158: 1852398507
+      FD_Animated_Lava_159: 1981967193
+      FD_Animated_Lava_16: 315422540
+      FD_Animated_Lava_160: 1339091870
+      FD_Animated_Lava_161: 392915934
+      FD_Animated_Lava_162: -1762138981
+      FD_Animated_Lava_163: -1785292005
+      FD_Animated_Lava_164: 1347080831
+      FD_Animated_Lava_165: -1348680178
+      FD_Animated_Lava_166: 1648660583
+      FD_Animated_Lava_167: 476237542
+      FD_Animated_Lava_168: -134557904
+      FD_Animated_Lava_169: 62785701
+      FD_Animated_Lava_17: 1427709455
+      FD_Animated_Lava_170: -1996562238
+      FD_Animated_Lava_171: -276050880
+      FD_Animated_Lava_172: 972853829
+      FD_Animated_Lava_173: 108126152
+      FD_Animated_Lava_174: 253374707
+      FD_Animated_Lava_175: -1141210490
+      FD_Animated_Lava_176: 1793951232
+      FD_Animated_Lava_177: 692234948
+      FD_Animated_Lava_178: 1333386957
+      FD_Animated_Lava_179: 141470508
+      FD_Animated_Lava_18: -829505276
+      FD_Animated_Lava_19: -2097279449
+      FD_Animated_Lava_2: -1701302990
+      FD_Animated_Lava_20: -782110595
+      FD_Animated_Lava_21: -1674455310
       FD_Animated_Lava_22: 392771553
-      FD_Animated_Lava_92: -1198497375
-      FD_Animated_Lava_76: -797927844
+      FD_Animated_Lava_23: 952133723
+      FD_Animated_Lava_24: -1379002003
       FD_Animated_Lava_25: 55700301
       FD_Animated_Lava_26: 1633987972
-      FD_Animated_Lava_152: 1674986737
-      FD_Animated_Lava_11: 2036690671
-      FD_Animated_Lava_150: 1969177141
-      FD_Animated_Lava_79: 702958126
-      FD_Animated_Lava_5: 1081490856
-      FD_Animated_Lava_80: -710337236
-      FD_Animated_Lava_4: 775149659
-      FD_Animated_Lava_61: -194942223
-      FD_Animated_Lava_165: -1348680178
-      FD_Animated_Lava_173: 108126152
-      FD_Animated_Lava_126: 892499193
-      FD_Animated_Lava_55: -1430362493
-      FD_Animated_Lava_169: 62785701
-      FD_Animated_Lava_34: 1386019350
-      FD_Animated_Lava_117: 749076079
-      FD_Animated_Lava_49: 1797282539
-      FD_Animated_Lava_37: -722944941
-      FD_Animated_Lava_40: -2056164812
-      FD_Animated_Lava_59: 259672220
-      FD_Animated_Lava_121: 1975423714
-      FD_Animated_Lava_54: -1283924076
-      FD_Animated_Lava_162: -1762138981
-      FD_Animated_Lava_154: -576283400
-      FD_Animated_Lava_125: -1667424283
-      FD_Animated_Lava_137: 777050688
-      FD_Animated_Lava_135: 209120169
-      FD_Animated_Lava_73: -176565363
-      FD_Animated_Lava_0: 745986523
-      FD_Animated_Lava_14: 890471207
-      FD_Animated_Lava_124: 256099936
-      FD_Animated_Lava_60: -322953994
-      FD_Animated_Lava_139: 1900032055
-      FD_Animated_Lava_167: 476237542
-      FD_Animated_Lava_107: -1034307866
-      FD_Animated_Lava_176: 1793951232
-      FD_Animated_Lava_68: -1471675639
-      FD_Animated_Lava_120: 440035039
-      FD_Animated_Lava_118: 345491967
-      FD_Animated_Lava_12: -287144007
-      FD_Animated_Lava_115: 1321964167
-      FD_Animated_Lava_47: 34829273
-      FD_Animated_Lava_58: 689393196
-      FD_Animated_Lava_74: -90860571
-      FD_Animated_Lava_90: -947973396
-      FD_Animated_Lava_142: 1182585312
-      FD_Animated_Lava_109: -628473426
-      FD_Animated_Lava_141: 1772859342
-      FD_Animated_Lava_96: 1890825713
-      FD_Animated_Lava_168: -134557904
-      FD_Animated_Lava_97: -820829194
-      FD_Animated_Lava_16: 315422540
-      FD_Animated_Lava_18: -829505276
-      FD_Animated_Lava_48: 2144922604
-      FD_Animated_Lava_160: 1339091870
-      FD_Animated_Lava_166: 1648660583
-      FD_Animated_Lava_101: 353600742
-      FD_Animated_Lava_103: -209361269
-      FD_Animated_Lava_42: 1588841095
-      FD_Animated_Lava_88: 563058415
-      FD_Animated_Lava_15: -663241560
-      FD_Animated_Lava_53: 1447303378
-      FD_Animated_Lava_114: 1804562546
-      FD_Animated_Lava_170: -1996562238
-      FD_Animated_Lava_164: 1347080831
-      FD_Animated_Lava_38: -629082570
-      FD_Animated_Lava_29: 2085914253
-      FD_Animated_Lava_113: 715952394
-      FD_Animated_Lava_129: -546740951
-      FD_Animated_Lava_83: 1761870740
-      FD_Animated_Lava_65: 1995775088
-      FD_Animated_Lava_112: -1320265180
-      FD_Animated_Lava_146: 199382365
-      FD_Animated_Lava_140: 887203627
-      FD_Animated_Lava_36: 528691973
-      FD_Animated_Lava_131: -1740518462
-      FD_Animated_Lava_91: 1909362601
-      FD_Animated_Lava_31: 366800658
-      FD_Animated_Lava_158: 1852398507
-      FD_Animated_Lava_9: -835063775
-      FD_Animated_Lava_2: -1701302990
-      FD_Animated_Lava_171: -276050880
-      FD_Animated_Lava_111: 1559454284
-      FD_Animated_Lava_130: -644867924
       FD_Animated_Lava_27: 1372550167
-      FD_Animated_Lava_57: -1930061357
-      FD_Animated_Lava_110: -450677196
-      FD_Animated_Lava_46: -615539852
-      FD_Animated_Lava_149: 1830793087
-      FD_Animated_Lava_175: -1141210490
-      FD_Animated_Lava_84: 487555717
-      FD_Animated_Lava_1: 1545442264
-      FD_Animated_Lava_147: 1173308317
-      FD_Animated_Lava_179: 141470508
-      FD_Animated_Lava_24: -1379002003
-      FD_Animated_Lava_178: 1333386957
-      FD_Animated_Lava_157: -2136429799
-      FD_Animated_Lava_151: 1267881203
-      FD_Animated_Lava_81: -955416563
-      FD_Animated_Lava_52: 1123918948
-      FD_Animated_Lava_99: 898119040
-      FD_Animated_Lava_123: -1382976959
-      FD_Animated_Lava_33: 1359392104
-      FD_Animated_Lava_50: -1868515729
-      FD_Animated_Lava_133: 344968224
-      FD_Animated_Lava_21: -1674455310
-      FD_Animated_Lava_93: -2129523731
-      FD_Animated_Lava_163: -1785292005
-      FD_Animated_Lava_86: 200228557
-      FD_Animated_Lava_153: -24027193
-      FD_Animated_Lava_87: 2746654
-      FD_Animated_Lava_172: 972853829
-      FD_Animated_Lava_71: 1515320778
-      FD_Animated_Lava_39: 1559540112
-      FD_Animated_Lava_161: 392915934
-      FD_Animated_Lava_56: 612711750
+      FD_Animated_Lava_28: 1305017526
+      FD_Animated_Lava_29: 2085914253
       FD_Animated_Lava_3: -595702675
-  spritePackingTag: 
+      FD_Animated_Lava_30: -1383740064
+      FD_Animated_Lava_31: 366800658
+      FD_Animated_Lava_32: 1486248139
+      FD_Animated_Lava_33: 1359392104
+      FD_Animated_Lava_34: 1386019350
+      FD_Animated_Lava_35: 76837924
+      FD_Animated_Lava_36: 528691973
+      FD_Animated_Lava_37: -722944941
+      FD_Animated_Lava_38: -629082570
+      FD_Animated_Lava_39: 1559540112
+      FD_Animated_Lava_4: 775149659
+      FD_Animated_Lava_40: -2056164812
+      FD_Animated_Lava_41: -1364765049
+      FD_Animated_Lava_42: 1588841095
+      FD_Animated_Lava_43: -1253440062
+      FD_Animated_Lava_44: 864825500
+      FD_Animated_Lava_45: 570545927
+      FD_Animated_Lava_46: -615539852
+      FD_Animated_Lava_47: 34829273
+      FD_Animated_Lava_48: 2144922604
+      FD_Animated_Lava_49: 1797282539
+      FD_Animated_Lava_5: 1081490856
+      FD_Animated_Lava_50: -1868515729
+      FD_Animated_Lava_51: 807905328
+      FD_Animated_Lava_52: 1123918948
+      FD_Animated_Lava_53: 1447303378
+      FD_Animated_Lava_54: -1283924076
+      FD_Animated_Lava_55: -1430362493
+      FD_Animated_Lava_56: 612711750
+      FD_Animated_Lava_57: -1930061357
+      FD_Animated_Lava_58: 689393196
+      FD_Animated_Lava_59: 259672220
+      FD_Animated_Lava_6: 1552493826
+      FD_Animated_Lava_60: -322953994
+      FD_Animated_Lava_61: -194942223
+      FD_Animated_Lava_62: -878450318
+      FD_Animated_Lava_63: -1960521999
+      FD_Animated_Lava_64: 1334463078
+      FD_Animated_Lava_65: 1995775088
+      FD_Animated_Lava_66: -2126599392
+      FD_Animated_Lava_67: 1118247596
+      FD_Animated_Lava_68: -1471675639
+      FD_Animated_Lava_69: -1789851107
+      FD_Animated_Lava_7: 514893776
+      FD_Animated_Lava_70: -1039736923
+      FD_Animated_Lava_71: 1515320778
+      FD_Animated_Lava_72: 1839110531
+      FD_Animated_Lava_73: -176565363
+      FD_Animated_Lava_74: -90860571
+      FD_Animated_Lava_75: -1531476807
+      FD_Animated_Lava_76: -797927844
+      FD_Animated_Lava_77: -1656402654
+      FD_Animated_Lava_78: 589942427
+      FD_Animated_Lava_79: 702958126
+      FD_Animated_Lava_8: 229968773
+      FD_Animated_Lava_80: -710337236
+      FD_Animated_Lava_81: -955416563
+      FD_Animated_Lava_82: 182178679
+      FD_Animated_Lava_83: 1761870740
+      FD_Animated_Lava_84: 487555717
+      FD_Animated_Lava_85: -794084951
+      FD_Animated_Lava_86: 200228557
+      FD_Animated_Lava_87: 2746654
+      FD_Animated_Lava_88: 563058415
+      FD_Animated_Lava_89: -747437407
+      FD_Animated_Lava_9: -835063775
+      FD_Animated_Lava_90: -947973396
+      FD_Animated_Lava_91: 1909362601
+      FD_Animated_Lava_92: -1198497375
+      FD_Animated_Lava_93: -2129523731
+      FD_Animated_Lava_94: -1078369576
+      FD_Animated_Lava_95: 557096292
+      FD_Animated_Lava_96: 1890825713
+      FD_Animated_Lava_97: -820829194
+      FD_Animated_Lava_98: -1658700934
+      FD_Animated_Lava_99: 898119040
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
