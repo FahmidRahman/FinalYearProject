@@ -6,24 +6,23 @@ using UnityEngine.InputSystem;
 public class IceSliding : MonoBehaviour
 {
     public float moveSpeed = 1f;
-    public float slideSpeed = 5f;
     public ContactFilter2D movementFilter;
     public float collisionOffset = 0.05f;
-    Vector2 movementInput;
-    Rigidbody2D rb;
-    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
-    Animator animator;
-    SpriteRenderer spriteRenderer;
     public VectorValue startingPosition;
+    public float slideSpeed = 5f;
 
-    // Ice sliding variables
-    private bool isSliding = false; // Is the player sliding on ice
-    private Vector2 slideDirection; // Direction of sliding
+    private Vector2 movementInput;
+    private Rigidbody2D rb;
+    private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private Vector2 slideDirection;
+    private bool isSliding = false;
+    private bool isOnIce = false;
 
-    // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Initialising the rigidbody
+        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         transform.position = startingPosition.initialValue;
@@ -31,65 +30,39 @@ public class IceSliding : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isSliding && movementInput != Vector2.zero) 
+        if (isSliding)
         {
-            bool move = tryMove(movementInput);
-
-            if (!move)
+            PerformSliding(); // Handle sliding while on ice
+        }
+        else if (!isOnIce) // Regular movement off the ice
+        {
+            if (movementInput != Vector2.zero)
             {
-                move = tryMove(new Vector2(movementInput.x, 0));
+                bool move = tryMove(movementInput);
 
                 if (!move)
                 {
-                    move = tryMove(new Vector2(0, movementInput.y));
-                }
-            }
+                    move = tryMove(new Vector2(movementInput.x, 0));
 
-            if (movementInput.x > 0)
-            {
-                animator.SetBool("isWalking", move);
-                animator.SetBool("isWalkingDown", false); // Ensure isWalkingDown is false when moving horizontally
-                animator.SetBool("isWalkingUp", false);
-            }
-            else if (movementInput.x < 0)
-            {
-                animator.SetBool("isWalking", move);
-                animator.SetBool("isWalkingDown", false); // Ensure isWalkingDown is false when moving horizontally
-                animator.SetBool("isWalkingUp", false);
-            }
-            else if (movementInput.y < 0 && movementInput.x == 0)
-            {
-                animator.SetBool("isWalkingDown", move);
-                animator.SetBool("isWalking", false); // Ensure isWalking is false when moving down
-                animator.SetBool("isWalkingUp", false);
-            }
-            else if (movementInput.y > 0 && movementInput.x == 0)
-            {
-                animator.SetBool("isWalkingUp", move);
-                animator.SetBool("isWalking", false); // Ensure isWalking is false when moving up
-                animator.SetBool("isWalkingDown", false);
+                    if (!move)
+                    {
+                        move = tryMove(new Vector2(0, movementInput.y));
+                    }
+                }
+
+                HandleAnimation(move);
             }
             else
             {
-                animator.SetBool("isWalking", false);
-                animator.SetBool("isWalkingDown", false);
-                animator.SetBool("isWalkingUp", false);
+                ResetAnimation();
             }
-        }
 
-        else {
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isWalkingDown", false);
-            animator.SetBool("isWalkingUp", false);
+            HandleSpriteFlip();
         }
-
-        if (movementInput.x < 0)
+        else if (isOnIce && movementInput != Vector2.zero) // Restart sliding if on ice and input is received
         {
-            spriteRenderer.flipX = true;
-        }
-        else if (movementInput.x > 0)
-        {
-            spriteRenderer.flipX = false;
+            slideDirection = movementInput.normalized;
+            isSliding = true;
         }
     }
 
@@ -98,19 +71,19 @@ public class IceSliding : MonoBehaviour
         if (direction != Vector2.zero)
         {
             int count = rb.Cast(
-                direction,  // X and Y values between -1 and 1 that represent the direction from the body to look for collisions.
-                movementFilter,  // The settings that determine where a collision can occur on, such as layers to collide with.
-                castCollisions,  // List of collisions to store the found collisions into, after the cast is finished.
-                moveSpeed * Time.fixedDeltaTime + collisionOffset);  // The amount to cast equal to the movement plus an offset. Can prevent getting stuck on terrain.
+                direction,
+                movementFilter,
+                castCollisions,
+                moveSpeed * Time.fixedDeltaTime + collisionOffset);
 
-            if (count == 0)
+            if (count == 0) // No collision, so move
             {
                 rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
                 return true;
             }
             else
             {
-                return false;
+                return false; // Collision detected
             }
         }
         else
@@ -124,45 +97,103 @@ public class IceSliding : MonoBehaviour
         movementInput = movementValue.Get<Vector2>();
     }
 
-    // Trigger when entering ice (start sliding)
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ice") && !isSliding)
+        if (other.CompareTag("Ice"))
         {
-            isSliding = true;
-
-            // need to add stopping diagonal movement when sliding
-
-            slideDirection = movementInput.normalized; // Set the sliding direction based on last input
-            rb.velocity = slideDirection * slideSpeed; // Apply initial velocity in the sliding direction
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isWalkingDown", false);
-            animator.SetBool("isWalkingUp", false);
+            isOnIce = true; // Player is on ice
+            slideDirection = movementInput.normalized; // Set sliding direction based on input
+            ResetAnimation();
+            if (slideDirection != Vector2.zero) // Start sliding immediately if input is present
+            {
+                isSliding = true;
+            }
         }
     }
 
-    // Trigger when colliding with an obstacle (stop sliding)
-    void OnCollisionEnter2D(Collision2D collision) // not working
+    private void PerformSliding()
     {
-        if (isSliding){
-            StopSliding();
+        if (slideDirection != Vector2.zero)
+        {
+            bool canSlide = tryMove(slideDirection); // Attempt to move in the slide direction
+
+            if (!canSlide)
+            {
+                StopSliding(); // Stop sliding if collision occurs
+            }
         }
+        else
+        {
+            StopSliding(); // Stop sliding if direction is zero
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log($"Collision detected with {collision.gameObject.name}");
+        StopSliding(); // Stop sliding on collision
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Ice"))
         {
-            StopSliding(); // Stop sliding as soon as we leave the ice
+            isOnIce = false; // Player is no longer on ice
+            StopSliding();
         }
     }
 
     private void StopSliding()
     {
-        isSliding = false; // Mark as no longer sliding
-        rb.velocity = Vector2.zero; // Stop any movement immediately
+        rb.velocity = Vector2.zero; // Stop all movement
+        isSliding = false; // Reset sliding flag
+        ResetAnimation();
+    }
+
+    private void HandleAnimation(bool isMoving)
+    {
+        if (movementInput.x > 0)
+        {
+            animator.SetBool("isWalking", isMoving);
+            animator.SetBool("isWalkingDown", false);
+            animator.SetBool("isWalkingUp", false);
+        }
+        else if (movementInput.x < 0)
+        {
+            animator.SetBool("isWalking", isMoving);
+            animator.SetBool("isWalkingDown", false);
+            animator.SetBool("isWalkingUp", false);
+        }
+        else if (movementInput.y < 0 && movementInput.x == 0)
+        {
+            animator.SetBool("isWalkingDown", isMoving);
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isWalkingUp", false);
+        }
+        else if (movementInput.y > 0 && movementInput.x == 0)
+        {
+            animator.SetBool("isWalkingUp", isMoving);
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isWalkingDown", false);
+        }
+    }
+
+    private void ResetAnimation()
+    {
         animator.SetBool("isWalking", false);
         animator.SetBool("isWalkingDown", false);
         animator.SetBool("isWalkingUp", false);
+    }
+
+    private void HandleSpriteFlip()
+    {
+        if (movementInput.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (movementInput.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 }
