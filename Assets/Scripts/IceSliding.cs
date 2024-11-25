@@ -63,6 +63,7 @@ public class IceSliding : MonoBehaviour
         {
             slideDirection = movementInput.normalized;
             isSliding = true;
+            UpdateSlidingAnimation(); // Show correct animation when sliding starts
         }
     }
 
@@ -103,6 +104,7 @@ public class IceSliding : MonoBehaviour
         {
             isOnIce = true; // Player is on ice
             slideDirection = movementInput.normalized; // Set sliding direction based on input
+            UpdateSlidingAnimation();
             ResetAnimation();
             if (slideDirection != Vector2.zero) // Start sliding immediately if input is present
             {
@@ -121,6 +123,11 @@ public class IceSliding : MonoBehaviour
             {
                 StopSliding(); // Stop sliding if collision occurs
             }
+            else
+            {
+                UpdateSlidingAnimation(); // Update the sliding animation
+                ResetAnimation();
+            }
         }
         else
         {
@@ -128,9 +135,7 @@ public class IceSliding : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log($"Collision detected with {collision.gameObject.name}");
+    void OnCollisionEnter2D(Collision2D collision) {
         StopSliding(); // Stop sliding on collision
     }
 
@@ -195,5 +200,37 @@ public class IceSliding : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
+    }
+
+    private void UpdateSlidingAnimation()
+    {
+        // Update animations based on the slide direction
+        if (slideDirection.x > 0) // Moving right
+        {
+            animator.SetBool("isWalking", true);
+            animator.SetBool("isWalkingDown", false);
+            animator.SetBool("isWalkingUp", false);
+        }
+        else if (slideDirection.x < 0) // Moving left
+        {
+            animator.SetBool("isWalking", true);
+            animator.SetBool("isWalkingDown", false);
+            animator.SetBool("isWalkingUp", false);
+        }
+        else if (slideDirection.y < 0) // Moving down
+        {
+            animator.SetBool("isWalkingDown", true);
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isWalkingUp", false);
+        }
+        else if (slideDirection.y > 0) // Moving up
+        {
+            animator.SetBool("isWalkingUp", true);
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isWalkingDown", false);
+        }
+
+        // Adjust sprite direction for left/right
+        HandleSpriteFlip();
     }
 }
