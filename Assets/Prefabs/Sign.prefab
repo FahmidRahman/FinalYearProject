@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7838121931981188551}
   - component: {fileID: 1920242859273353773}
   - component: {fileID: 4448316969630878482}
-  - component: {fileID: 2759067771367262725}
   - component: {fileID: 4650699824904839963}
   m_Layer: 0
   m_Name: Sign
@@ -180,22 +179,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.16, y: 0.16425449}
   m_EdgeRadius: 0
---- !u!114 &2759067771367262725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7865917006978351835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d684de7845246ba8de1536217e832d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogue: 
-  playerInRange: 0
 --- !u!114 &4650699824904839963
 MonoBehaviour:
   m_ObjectHideFlags: 0
