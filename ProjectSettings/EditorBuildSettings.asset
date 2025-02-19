@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/route1.unity
     guid: 9e41eda96f0224d22842eb22bc154c6c
+  - enabled: 1
+    path: Assets/Scenes/library_underground.unity
+    guid: 0483b37267a5d4790bf70ca4a062d253
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

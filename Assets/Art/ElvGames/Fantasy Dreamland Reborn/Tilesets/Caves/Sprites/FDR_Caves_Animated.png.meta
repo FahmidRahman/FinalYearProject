@@ -3,7 +3,7 @@ guid: 9e0d88770e70fa248828953c61c6e351
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2521,122 +2524,121 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       FDR_Caves_Animated_0: -226290014
-      FDR_Caves_Animated_13: -551085751
-      FDR_Caves_Animated_49: -1422369920
-      FDR_Caves_Animated_46: -1794083194
-      FDR_Caves_Animated_88: -142669330
-      FDR_Caves_Animated_26: -638735469
-      FDR_Caves_Animated_89: -2003457581
-      FDR_Caves_Animated_44: -317966323
-      FDR_Caves_Animated_78: 1435530104
-      FDR_Caves_Animated_31: 665010213
-      FDR_Caves_Animated_55: -201052547
-      FDR_Caves_Animated_79: 468253772
-      FDR_Caves_Animated_38: 1369833848
-      FDR_Caves_Animated_99: 1672719988
-      FDR_Caves_Animated_74: -1234343343
-      FDR_Caves_Animated_20: 2083318591
-      FDR_Caves_Animated_35: -1345992211
-      FDR_Caves_Animated_4: 492656899
-      FDR_Caves_Animated_28: 1064139972
-      FDR_Caves_Animated_37: 1218635093
-      FDR_Caves_Animated_71: -1888860306
-      FDR_Caves_Animated_72: 572108361
-      FDR_Caves_Animated_56: 610753752
-      FDR_Caves_Animated_83: 214851124
-      FDR_Caves_Animated_68: -381783661
-      FDR_Caves_Animated_111: 1241038273
-      FDR_Caves_Animated_8: 1361231572
-      FDR_Caves_Animated_9: 282769798
-      FDR_Caves_Animated_62: 1330761014
-      FDR_Caves_Animated_93: 847574600
-      FDR_Caves_Animated_90: -1423668631
-      FDR_Caves_Animated_7: 1693490383
-      FDR_Caves_Animated_12: -1543984225
-      FDR_Caves_Animated_22: -520226681
-      FDR_Caves_Animated_65: 1868074169
-      FDR_Caves_Animated_61: -2097562390
-      FDR_Caves_Animated_69: 1458245073
-      FDR_Caves_Animated_52: -2059189866
-      FDR_Caves_Animated_96: -1909078185
-      FDR_Caves_Animated_106: 1009321586
-      FDR_Caves_Animated_113: 66891204
-      FDR_Caves_Animated_19: -929864772
-      FDR_Caves_Animated_42: -1868639673
-      FDR_Caves_Animated_104: 1806045534
-      FDR_Caves_Animated_47: -237851949
-      FDR_Caves_Animated_39: 422976404
-      FDR_Caves_Animated_43: -575525806
-      FDR_Caves_Animated_27: -668932905
-      FDR_Caves_Animated_66: 2121472314
-      FDR_Caves_Animated_85: 1681580576
-      FDR_Caves_Animated_97: 911838867
-      FDR_Caves_Animated_105: -1412734170
-      FDR_Caves_Animated_59: -1775246531
-      FDR_Caves_Animated_95: 1854457945
-      FDR_Caves_Animated_17: -532836671
-      FDR_Caves_Animated_80: 550630126
-      FDR_Caves_Animated_15: 34489847
-      FDR_Caves_Animated_25: -1265136575
-      FDR_Caves_Animated_23: 1450953871
-      FDR_Caves_Animated_50: -826491955
-      FDR_Caves_Animated_107: 1519227117
-      FDR_Caves_Animated_112: 1698646272
-      FDR_Caves_Animated_57: 205527121
-      FDR_Caves_Animated_84: -1635457230
-      FDR_Caves_Animated_70: 749316752
-      FDR_Caves_Animated_53: -85665666
-      FDR_Caves_Animated_98: -539049121
-      FDR_Caves_Animated_36: 1988411990
-      FDR_Caves_Animated_6: -538831973
-      FDR_Caves_Animated_67: -1340366696
-      FDR_Caves_Animated_109: -155982766
-      FDR_Caves_Animated_63: 614874275
-      FDR_Caves_Animated_40: -244658292
+      FDR_Caves_Animated_1: 333846855
       FDR_Caves_Animated_10: 1523577987
-      FDR_Caves_Animated_108: 435876863
-      FDR_Caves_Animated_76: -610491777
-      FDR_Caves_Animated_110: 347799217
-      FDR_Caves_Animated_92: 2083005919
-      FDR_Caves_Animated_81: -1757047092
-      FDR_Caves_Animated_32: -1456483272
-      FDR_Caves_Animated_14: -1112023769
-      FDR_Caves_Animated_41: 796584492
       FDR_Caves_Animated_100: -881312008
-      FDR_Caves_Animated_21: -404341913
-      FDR_Caves_Animated_58: 1270961617
-      FDR_Caves_Animated_54: 642103766
-      FDR_Caves_Animated_18: -1018001187
-      FDR_Caves_Animated_2: 476503420
-      FDR_Caves_Animated_11: -289444223
-      FDR_Caves_Animated_16: 1849092352
-      FDR_Caves_Animated_33: -1542001364
-      FDR_Caves_Animated_77: -2120527690
-      FDR_Caves_Animated_29: -179935729
-      FDR_Caves_Animated_91: 98413941
-      FDR_Caves_Animated_64: 849703920
+      FDR_Caves_Animated_101: -955668455
       FDR_Caves_Animated_102: -703330893
       FDR_Caves_Animated_103: -882107838
-      FDR_Caves_Animated_87: -405182483
-      FDR_Caves_Animated_51: -1039652011
-      FDR_Caves_Animated_86: 1233681024
+      FDR_Caves_Animated_104: 1806045534
+      FDR_Caves_Animated_105: -1412734170
+      FDR_Caves_Animated_106: 1009321586
+      FDR_Caves_Animated_107: 1519227117
+      FDR_Caves_Animated_108: 435876863
+      FDR_Caves_Animated_109: -155982766
+      FDR_Caves_Animated_11: -289444223
+      FDR_Caves_Animated_110: 347799217
+      FDR_Caves_Animated_111: 1241038273
+      FDR_Caves_Animated_112: 1698646272
+      FDR_Caves_Animated_113: 66891204
+      FDR_Caves_Animated_12: -1543984225
+      FDR_Caves_Animated_13: -551085751
+      FDR_Caves_Animated_14: -1112023769
+      FDR_Caves_Animated_15: 34489847
+      FDR_Caves_Animated_16: 1849092352
+      FDR_Caves_Animated_17: -532836671
+      FDR_Caves_Animated_18: -1018001187
+      FDR_Caves_Animated_19: -929864772
+      FDR_Caves_Animated_2: 476503420
+      FDR_Caves_Animated_20: 2083318591
+      FDR_Caves_Animated_21: -404341913
+      FDR_Caves_Animated_22: -520226681
+      FDR_Caves_Animated_23: 1450953871
       FDR_Caves_Animated_24: 1438420779
-      FDR_Caves_Animated_1: 333846855
-      FDR_Caves_Animated_5: 1528749907
-      FDR_Caves_Animated_101: -955668455
-      FDR_Caves_Animated_34: -581924105
-      FDR_Caves_Animated_30: 2075072522
-      FDR_Caves_Animated_45: 791026263
-      FDR_Caves_Animated_94: -522389937
-      FDR_Caves_Animated_73: -1223705540
-      FDR_Caves_Animated_75: -739181051
-      FDR_Caves_Animated_48: -1263187262
+      FDR_Caves_Animated_25: -1265136575
+      FDR_Caves_Animated_26: -638735469
+      FDR_Caves_Animated_27: -668932905
+      FDR_Caves_Animated_28: 1064139972
+      FDR_Caves_Animated_29: -179935729
       FDR_Caves_Animated_3: 394893287
+      FDR_Caves_Animated_30: 2075072522
+      FDR_Caves_Animated_31: 665010213
+      FDR_Caves_Animated_32: -1456483272
+      FDR_Caves_Animated_33: -1542001364
+      FDR_Caves_Animated_34: -581924105
+      FDR_Caves_Animated_35: -1345992211
+      FDR_Caves_Animated_36: 1988411990
+      FDR_Caves_Animated_37: 1218635093
+      FDR_Caves_Animated_38: 1369833848
+      FDR_Caves_Animated_39: 422976404
+      FDR_Caves_Animated_4: 492656899
+      FDR_Caves_Animated_40: -244658292
+      FDR_Caves_Animated_41: 796584492
+      FDR_Caves_Animated_42: -1868639673
+      FDR_Caves_Animated_43: -575525806
+      FDR_Caves_Animated_44: -317966323
+      FDR_Caves_Animated_45: 791026263
+      FDR_Caves_Animated_46: -1794083194
+      FDR_Caves_Animated_47: -237851949
+      FDR_Caves_Animated_48: -1263187262
+      FDR_Caves_Animated_49: -1422369920
+      FDR_Caves_Animated_5: 1528749907
+      FDR_Caves_Animated_50: -826491955
+      FDR_Caves_Animated_51: -1039652011
+      FDR_Caves_Animated_52: -2059189866
+      FDR_Caves_Animated_53: -85665666
+      FDR_Caves_Animated_54: 642103766
+      FDR_Caves_Animated_55: -201052547
+      FDR_Caves_Animated_56: 610753752
+      FDR_Caves_Animated_57: 205527121
+      FDR_Caves_Animated_58: 1270961617
+      FDR_Caves_Animated_59: -1775246531
+      FDR_Caves_Animated_6: -538831973
       FDR_Caves_Animated_60: 776689097
+      FDR_Caves_Animated_61: -2097562390
+      FDR_Caves_Animated_62: 1330761014
+      FDR_Caves_Animated_63: 614874275
+      FDR_Caves_Animated_64: 849703920
+      FDR_Caves_Animated_65: 1868074169
+      FDR_Caves_Animated_66: 2121472314
+      FDR_Caves_Animated_67: -1340366696
+      FDR_Caves_Animated_68: -381783661
+      FDR_Caves_Animated_69: 1458245073
+      FDR_Caves_Animated_7: 1693490383
+      FDR_Caves_Animated_70: 749316752
+      FDR_Caves_Animated_71: -1888860306
+      FDR_Caves_Animated_72: 572108361
+      FDR_Caves_Animated_73: -1223705540
+      FDR_Caves_Animated_74: -1234343343
+      FDR_Caves_Animated_75: -739181051
+      FDR_Caves_Animated_76: -610491777
+      FDR_Caves_Animated_77: -2120527690
+      FDR_Caves_Animated_78: 1435530104
+      FDR_Caves_Animated_79: 468253772
+      FDR_Caves_Animated_8: 1361231572
+      FDR_Caves_Animated_80: 550630126
+      FDR_Caves_Animated_81: -1757047092
       FDR_Caves_Animated_82: -169592983
-  spritePackingTag: 
+      FDR_Caves_Animated_83: 214851124
+      FDR_Caves_Animated_84: -1635457230
+      FDR_Caves_Animated_85: 1681580576
+      FDR_Caves_Animated_86: 1233681024
+      FDR_Caves_Animated_87: -405182483
+      FDR_Caves_Animated_88: -142669330
+      FDR_Caves_Animated_89: -2003457581
+      FDR_Caves_Animated_9: 282769798
+      FDR_Caves_Animated_90: -1423668631
+      FDR_Caves_Animated_91: 98413941
+      FDR_Caves_Animated_92: 2083005919
+      FDR_Caves_Animated_93: 847574600
+      FDR_Caves_Animated_94: -522389937
+      FDR_Caves_Animated_95: 1854457945
+      FDR_Caves_Animated_96: -1909078185
+      FDR_Caves_Animated_97: 911838867
+      FDR_Caves_Animated_98: -539049121
+      FDR_Caves_Animated_99: 1672719988
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
