@@ -3,7 +3,7 @@ guid: 41aa801208a4afc41970e7fecee59fa8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -4830,233 +4833,232 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_Dungeon_Doors_195: -1263950502
-      FD_Dungeon_Doors_10: -1606676585
-      FD_Dungeon_Doors_150: -703597790
-      FD_Dungeon_Doors_221: 390955581
-      FD_Dungeon_Doors_138: 1640004503
-      FD_Dungeon_Doors_181: -303897951
-      FD_Dungeon_Doors_208: 23206297
-      FD_Dungeon_Doors_147: -953998509
-      FD_Dungeon_Doors_130: 1197960948
-      FD_Dungeon_Doors_107: 998750802
-      FD_Dungeon_Doors_136: 2045798194
-      FD_Dungeon_Doors_154: 1317911940
-      FD_Dungeon_Doors_31: 990515623
-      FD_Dungeon_Doors_162: 287062924
-      FD_Dungeon_Doors_119: 1480037749
-      FD_Dungeon_Doors_13: -1156984653
-      FD_Dungeon_Doors_45: -903536247
-      FD_Dungeon_Doors_182: 340655764
-      FD_Dungeon_Doors_187: -2100870657
-      FD_Dungeon_Doors_104: 1744876379
-      FD_Dungeon_Doors_186: -843480773
-      FD_Dungeon_Doors_185: -1594685320
-      FD_Dungeon_Doors_85: 870254267
-      FD_Dungeon_Doors_67: 927311875
-      FD_Dungeon_Doors_140: 2119564018
-      FD_Dungeon_Doors_27: 719593903
-      FD_Dungeon_Doors_22: 1517634733
-      FD_Dungeon_Doors_176: 514113643
-      FD_Dungeon_Doors_152: -1018370781
-      FD_Dungeon_Doors_188: -1637087812
-      FD_Dungeon_Doors_33: -1172784444
-      FD_Dungeon_Doors_89: -656484764
-      FD_Dungeon_Doors_3: 307652911
-      FD_Dungeon_Doors_79: -962174199
-      FD_Dungeon_Doors_23: -1009100509
-      FD_Dungeon_Doors_75: -1349017883
-      FD_Dungeon_Doors_137: 196485608
+      FD_Dungeon_Doors_0: -1431566237
       FD_Dungeon_Doors_1: 674256384
-      FD_Dungeon_Doors_196: 551103180
-      FD_Dungeon_Doors_223: -246302236
-      FD_Dungeon_Doors_151: 713411484
-      FD_Dungeon_Doors_155: 1286757622
-      FD_Dungeon_Doors_73: 166996237
-      FD_Dungeon_Doors_148: -21265752
-      FD_Dungeon_Doors_175: 1780659829
-      FD_Dungeon_Doors_189: 731396804
-      FD_Dungeon_Doors_2: 443541244
+      FD_Dungeon_Doors_10: -1606676585
       FD_Dungeon_Doors_100: 809318559
-      FD_Dungeon_Doors_32: 839245411
-      FD_Dungeon_Doors_50: -1040145309
-      FD_Dungeon_Doors_153: -598075294
-      FD_Dungeon_Doors_173: -2061152516
-      FD_Dungeon_Doors_178: -1252133184
-      FD_Dungeon_Doors_157: 2026287758
-      FD_Dungeon_Doors_213: 394653726
-      FD_Dungeon_Doors_202: -1759377523
-      FD_Dungeon_Doors_194: -95399641
-      FD_Dungeon_Doors_43: 56553102
-      FD_Dungeon_Doors_26: 1236686063
-      FD_Dungeon_Doors_53: -1498076474
-      FD_Dungeon_Doors_161: -671930975
-      FD_Dungeon_Doors_81: 744709226
-      FD_Dungeon_Doors_193: -284444720
-      FD_Dungeon_Doors_190: -978551128
-      FD_Dungeon_Doors_44: 777830165
-      FD_Dungeon_Doors_117: -2084879471
-      FD_Dungeon_Doors_64: -1575197016
-      FD_Dungeon_Doors_158: 921635656
-      FD_Dungeon_Doors_184: -921096667
-      FD_Dungeon_Doors_165: -62024657
-      FD_Dungeon_Doors_198: -885846592
-      FD_Dungeon_Doors_115: -1558975281
-      FD_Dungeon_Doors_219: 878359606
-      FD_Dungeon_Doors_90: -1852925133
-      FD_Dungeon_Doors_113: -1811461389
-      FD_Dungeon_Doors_11: -2004792831
+      FD_Dungeon_Doors_101: 757791449
+      FD_Dungeon_Doors_102: 370166119
+      FD_Dungeon_Doors_103: -1794317800
+      FD_Dungeon_Doors_104: 1744876379
       FD_Dungeon_Doors_105: 1593713537
-      FD_Dungeon_Doors_96: -1406344081
-      FD_Dungeon_Doors_15: -1518150524
-      FD_Dungeon_Doors_66: -562115505
-      FD_Dungeon_Doors_70: -1886723744
-      FD_Dungeon_Doors_164: 814257345
-      FD_Dungeon_Doors_54: -696441232
-      FD_Dungeon_Doors_99: -104073315
-      FD_Dungeon_Doors_180: -1531037135
+      FD_Dungeon_Doors_106: 394042502
+      FD_Dungeon_Doors_107: 998750802
+      FD_Dungeon_Doors_108: 2049262250
+      FD_Dungeon_Doors_109: -111781766
+      FD_Dungeon_Doors_11: -2004792831
+      FD_Dungeon_Doors_110: 1338400181
+      FD_Dungeon_Doors_111: 1901195910
+      FD_Dungeon_Doors_112: -1337468227
+      FD_Dungeon_Doors_113: -1811461389
+      FD_Dungeon_Doors_114: -170118484
+      FD_Dungeon_Doors_115: -1558975281
+      FD_Dungeon_Doors_116: -1129419557
+      FD_Dungeon_Doors_117: -2084879471
+      FD_Dungeon_Doors_118: 2103589030
+      FD_Dungeon_Doors_119: 1480037749
+      FD_Dungeon_Doors_12: -257507953
+      FD_Dungeon_Doors_120: -348051204
       FD_Dungeon_Doors_121: -478312095
-      FD_Dungeon_Doors_200: 1139476595
-      FD_Dungeon_Doors_42: -1120981140
-      FD_Dungeon_Doors_209: -2137717124
-      FD_Dungeon_Doors_149: -1383125453
-      FD_Dungeon_Doors_197: -1982865815
-      FD_Dungeon_Doors_210: -1101390483
+      FD_Dungeon_Doors_122: -1501666208
+      FD_Dungeon_Doors_123: -1224008176
+      FD_Dungeon_Doors_124: -231040591
+      FD_Dungeon_Doors_125: 35123897
+      FD_Dungeon_Doors_126: -2123388702
+      FD_Dungeon_Doors_127: -1172251662
+      FD_Dungeon_Doors_128: 2134466851
+      FD_Dungeon_Doors_129: -1826169841
+      FD_Dungeon_Doors_13: -1156984653
+      FD_Dungeon_Doors_130: 1197960948
+      FD_Dungeon_Doors_131: -1219041867
+      FD_Dungeon_Doors_132: 669658676
+      FD_Dungeon_Doors_133: 1320358035
+      FD_Dungeon_Doors_134: 1480593938
+      FD_Dungeon_Doors_135: -1529530795
+      FD_Dungeon_Doors_136: 2045798194
+      FD_Dungeon_Doors_137: 196485608
+      FD_Dungeon_Doors_138: 1640004503
+      FD_Dungeon_Doors_139: -1374721599
       FD_Dungeon_Doors_14: 403956574
+      FD_Dungeon_Doors_140: 2119564018
+      FD_Dungeon_Doors_141: 1134051000
+      FD_Dungeon_Doors_142: 1182870789
+      FD_Dungeon_Doors_143: 1318893258
+      FD_Dungeon_Doors_144: -1610365384
+      FD_Dungeon_Doors_145: 266487411
+      FD_Dungeon_Doors_146: -926514176
+      FD_Dungeon_Doors_147: -953998509
+      FD_Dungeon_Doors_148: -21265752
+      FD_Dungeon_Doors_149: -1383125453
+      FD_Dungeon_Doors_15: -1518150524
+      FD_Dungeon_Doors_150: -703597790
+      FD_Dungeon_Doors_151: 713411484
+      FD_Dungeon_Doors_152: -1018370781
+      FD_Dungeon_Doors_153: -598075294
+      FD_Dungeon_Doors_154: 1317911940
+      FD_Dungeon_Doors_155: 1286757622
+      FD_Dungeon_Doors_156: 271283790
+      FD_Dungeon_Doors_157: 2026287758
+      FD_Dungeon_Doors_158: 921635656
+      FD_Dungeon_Doors_159: -738305022
+      FD_Dungeon_Doors_16: -1155381123
+      FD_Dungeon_Doors_160: 505262297
+      FD_Dungeon_Doors_161: -671930975
+      FD_Dungeon_Doors_162: 287062924
+      FD_Dungeon_Doors_163: -320347315
+      FD_Dungeon_Doors_164: 814257345
+      FD_Dungeon_Doors_165: -62024657
+      FD_Dungeon_Doors_166: -1525289908
+      FD_Dungeon_Doors_167: -1224997708
+      FD_Dungeon_Doors_168: 2049174835
+      FD_Dungeon_Doors_169: -490708752
+      FD_Dungeon_Doors_17: 301254276
+      FD_Dungeon_Doors_170: 640708153
+      FD_Dungeon_Doors_171: 604526421
+      FD_Dungeon_Doors_172: 2083938014
+      FD_Dungeon_Doors_173: -2061152516
+      FD_Dungeon_Doors_174: -1520888352
+      FD_Dungeon_Doors_175: 1780659829
+      FD_Dungeon_Doors_176: 514113643
+      FD_Dungeon_Doors_177: -801166881
+      FD_Dungeon_Doors_178: -1252133184
+      FD_Dungeon_Doors_179: 1059485512
+      FD_Dungeon_Doors_18: 1364281968
+      FD_Dungeon_Doors_180: -1531037135
+      FD_Dungeon_Doors_181: -303897951
+      FD_Dungeon_Doors_182: 340655764
+      FD_Dungeon_Doors_183: -1759999252
+      FD_Dungeon_Doors_184: -921096667
+      FD_Dungeon_Doors_185: -1594685320
+      FD_Dungeon_Doors_186: -843480773
+      FD_Dungeon_Doors_187: -2100870657
+      FD_Dungeon_Doors_188: -1637087812
+      FD_Dungeon_Doors_189: 731396804
+      FD_Dungeon_Doors_19: 503572934
+      FD_Dungeon_Doors_190: -978551128
+      FD_Dungeon_Doors_191: -591985033
+      FD_Dungeon_Doors_192: -1741644116
+      FD_Dungeon_Doors_193: -284444720
+      FD_Dungeon_Doors_194: -95399641
+      FD_Dungeon_Doors_195: -1263950502
+      FD_Dungeon_Doors_196: 551103180
+      FD_Dungeon_Doors_197: -1982865815
+      FD_Dungeon_Doors_198: -885846592
+      FD_Dungeon_Doors_199: 1247995683
+      FD_Dungeon_Doors_2: 443541244
+      FD_Dungeon_Doors_20: 557212653
+      FD_Dungeon_Doors_200: 1139476595
+      FD_Dungeon_Doors_201: -2124327999
+      FD_Dungeon_Doors_202: -1759377523
+      FD_Dungeon_Doors_203: -2011095144
+      FD_Dungeon_Doors_204: -1346992995
+      FD_Dungeon_Doors_205: -1764339378
+      FD_Dungeon_Doors_206: -1486434987
+      FD_Dungeon_Doors_207: 1694667967
+      FD_Dungeon_Doors_208: 23206297
+      FD_Dungeon_Doors_209: -2137717124
+      FD_Dungeon_Doors_21: -1664663885
+      FD_Dungeon_Doors_210: -1101390483
+      FD_Dungeon_Doors_211: -1664016840
+      FD_Dungeon_Doors_212: 1789881725
+      FD_Dungeon_Doors_213: 394653726
+      FD_Dungeon_Doors_214: -2068386305
+      FD_Dungeon_Doors_215: -2062610707
+      FD_Dungeon_Doors_216: 458817588
+      FD_Dungeon_Doors_217: -1165213978
+      FD_Dungeon_Doors_218: -895534122
+      FD_Dungeon_Doors_219: 878359606
+      FD_Dungeon_Doors_22: 1517634733
+      FD_Dungeon_Doors_220: -300459530
+      FD_Dungeon_Doors_221: 390955581
+      FD_Dungeon_Doors_222: -1354890633
+      FD_Dungeon_Doors_223: -246302236
+      FD_Dungeon_Doors_23: -1009100509
+      FD_Dungeon_Doors_24: 721520733
+      FD_Dungeon_Doors_25: 1708729336
+      FD_Dungeon_Doors_26: 1236686063
+      FD_Dungeon_Doors_27: 719593903
+      FD_Dungeon_Doors_28: 778920945
+      FD_Dungeon_Doors_29: 1454494959
+      FD_Dungeon_Doors_3: 307652911
+      FD_Dungeon_Doors_30: -1434176067
+      FD_Dungeon_Doors_31: 990515623
+      FD_Dungeon_Doors_32: 839245411
+      FD_Dungeon_Doors_33: -1172784444
+      FD_Dungeon_Doors_34: -1918179955
+      FD_Dungeon_Doors_35: -528134983
+      FD_Dungeon_Doors_36: -708542317
+      FD_Dungeon_Doors_37: -2080085753
+      FD_Dungeon_Doors_38: 445367748
+      FD_Dungeon_Doors_39: -52601831
+      FD_Dungeon_Doors_4: 1029984043
+      FD_Dungeon_Doors_40: 418817221
+      FD_Dungeon_Doors_41: -310922287
+      FD_Dungeon_Doors_42: -1120981140
+      FD_Dungeon_Doors_43: 56553102
+      FD_Dungeon_Doors_44: 777830165
+      FD_Dungeon_Doors_45: -903536247
+      FD_Dungeon_Doors_46: 273733311
+      FD_Dungeon_Doors_47: -790432028
       FD_Dungeon_Doors_48: 179746619
-      FD_Dungeon_Doors_68: 905585614
+      FD_Dungeon_Doors_49: 974878872
+      FD_Dungeon_Doors_5: -1139311430
+      FD_Dungeon_Doors_50: -1040145309
+      FD_Dungeon_Doors_51: 1762026806
+      FD_Dungeon_Doors_52: -1862648322
+      FD_Dungeon_Doors_53: -1498076474
+      FD_Dungeon_Doors_54: -696441232
+      FD_Dungeon_Doors_55: -365862347
+      FD_Dungeon_Doors_56: 1482416761
+      FD_Dungeon_Doors_57: 921592339
+      FD_Dungeon_Doors_58: -1026092272
       FD_Dungeon_Doors_59: 1901218113
       FD_Dungeon_Doors_6: 320221532
-      FD_Dungeon_Doors_103: -1794317800
-      FD_Dungeon_Doors_156: 271283790
-      FD_Dungeon_Doors_135: -1529530795
-      FD_Dungeon_Doors_211: -1664016840
-      FD_Dungeon_Doors_146: -926514176
-      FD_Dungeon_Doors_101: 757791449
-      FD_Dungeon_Doors_65: -1164336828
-      FD_Dungeon_Doors_83: -1995530789
-      FD_Dungeon_Doors_8: 1761736183
-      FD_Dungeon_Doors_71: -32473941
-      FD_Dungeon_Doors_16: -1155381123
-      FD_Dungeon_Doors_145: 266487411
-      FD_Dungeon_Doors_17: 301254276
-      FD_Dungeon_Doors_86: -496626110
-      FD_Dungeon_Doors_80: 1436632765
-      FD_Dungeon_Doors_39: -52601831
-      FD_Dungeon_Doors_63: 1356297126
-      FD_Dungeon_Doors_160: 505262297
-      FD_Dungeon_Doors_72: 1156343264
-      FD_Dungeon_Doors_222: -1354890633
-      FD_Dungeon_Doors_125: 35123897
-      FD_Dungeon_Doors_131: -1219041867
-      FD_Dungeon_Doors_127: -1172251662
-      FD_Dungeon_Doors_35: -528134983
-      FD_Dungeon_Doors_52: -1862648322
-      FD_Dungeon_Doors_37: -2080085753
-      FD_Dungeon_Doors_106: 394042502
-      FD_Dungeon_Doors_0: -1431566237
-      FD_Dungeon_Doors_93: -1723068000
-      FD_Dungeon_Doors_74: 1558888872
-      FD_Dungeon_Doors_207: 1694667967
-      FD_Dungeon_Doors_170: 640708153
-      FD_Dungeon_Doors_141: 1134051000
-      FD_Dungeon_Doors_49: 974878872
-      FD_Dungeon_Doors_172: 2083938014
-      FD_Dungeon_Doors_56: 1482416761
-      FD_Dungeon_Doors_191: -591985033
-      FD_Dungeon_Doors_112: -1337468227
-      FD_Dungeon_Doors_76: -1470410186
-      FD_Dungeon_Doors_120: -348051204
-      FD_Dungeon_Doors_29: 1454494959
-      FD_Dungeon_Doors_102: 370166119
-      FD_Dungeon_Doors_108: 2049262250
-      FD_Dungeon_Doors_61: 1699806986
-      FD_Dungeon_Doors_139: -1374721599
-      FD_Dungeon_Doors_21: -1664663885
-      FD_Dungeon_Doors_36: -708542317
-      FD_Dungeon_Doors_97: 129940436
-      FD_Dungeon_Doors_204: -1346992995
-      FD_Dungeon_Doors_28: 778920945
-      FD_Dungeon_Doors_123: -1224008176
-      FD_Dungeon_Doors_12: -257507953
-      FD_Dungeon_Doors_133: 1320358035
-      FD_Dungeon_Doors_94: -1118111161
-      FD_Dungeon_Doors_4: 1029984043
-      FD_Dungeon_Doors_201: -2124327999
-      FD_Dungeon_Doors_34: -1918179955
-      FD_Dungeon_Doors_20: 557212653
-      FD_Dungeon_Doors_18: 1364281968
-      FD_Dungeon_Doors_179: 1059485512
-      FD_Dungeon_Doors_183: -1759999252
-      FD_Dungeon_Doors_95: 1848882633
-      FD_Dungeon_Doors_5: -1139311430
-      FD_Dungeon_Doors_144: -1610365384
-      FD_Dungeon_Doors_218: -895534122
-      FD_Dungeon_Doors_118: 2103589030
-      FD_Dungeon_Doors_128: 2134466851
-      FD_Dungeon_Doors_40: 418817221
-      FD_Dungeon_Doors_38: 445367748
-      FD_Dungeon_Doors_143: 1318893258
-      FD_Dungeon_Doors_132: 669658676
-      FD_Dungeon_Doors_177: -801166881
-      FD_Dungeon_Doors_92: 1460283401
-      FD_Dungeon_Doors_167: -1224997708
-      FD_Dungeon_Doors_109: -111781766
-      FD_Dungeon_Doors_84: 197119601
-      FD_Dungeon_Doors_171: 604526421
-      FD_Dungeon_Doors_203: -2011095144
-      FD_Dungeon_Doors_41: -310922287
-      FD_Dungeon_Doors_159: -738305022
-      FD_Dungeon_Doors_220: -300459530
-      FD_Dungeon_Doors_46: 273733311
-      FD_Dungeon_Doors_19: 503572934
-      FD_Dungeon_Doors_114: -170118484
-      FD_Dungeon_Doors_91: 55220581
-      FD_Dungeon_Doors_205: -1764339378
-      FD_Dungeon_Doors_55: -365862347
-      FD_Dungeon_Doors_47: -790432028
-      FD_Dungeon_Doors_129: -1826169841
-      FD_Dungeon_Doors_174: -1520888352
-      FD_Dungeon_Doors_126: -2123388702
-      FD_Dungeon_Doors_30: -1434176067
-      FD_Dungeon_Doors_51: 1762026806
-      FD_Dungeon_Doors_134: 1480593938
       FD_Dungeon_Doors_60: -393321019
-      FD_Dungeon_Doors_78: -1113231072
-      FD_Dungeon_Doors_7: 646662540
-      FD_Dungeon_Doors_192: -1741644116
-      FD_Dungeon_Doors_116: -1129419557
-      FD_Dungeon_Doors_168: 2049174835
-      FD_Dungeon_Doors_25: 1708729336
-      FD_Dungeon_Doors_69: -2113571361
-      FD_Dungeon_Doors_216: 458817588
-      FD_Dungeon_Doors_24: 721520733
-      FD_Dungeon_Doors_87: -1264338598
-      FD_Dungeon_Doors_169: -490708752
-      FD_Dungeon_Doors_199: 1247995683
-      FD_Dungeon_Doors_142: 1182870789
-      FD_Dungeon_Doors_111: 1901195910
-      FD_Dungeon_Doors_122: -1501666208
-      FD_Dungeon_Doors_215: -2062610707
-      FD_Dungeon_Doors_82: 1913726603
-      FD_Dungeon_Doors_212: 1789881725
-      FD_Dungeon_Doors_98: 130574161
-      FD_Dungeon_Doors_217: -1165213978
-      FD_Dungeon_Doors_57: 921592339
-      FD_Dungeon_Doors_124: -231040591
-      FD_Dungeon_Doors_9: -2017977623
-      FD_Dungeon_Doors_58: -1026092272
+      FD_Dungeon_Doors_61: 1699806986
       FD_Dungeon_Doors_62: -1421889188
+      FD_Dungeon_Doors_63: 1356297126
+      FD_Dungeon_Doors_64: -1575197016
+      FD_Dungeon_Doors_65: -1164336828
+      FD_Dungeon_Doors_66: -562115505
+      FD_Dungeon_Doors_67: 927311875
+      FD_Dungeon_Doors_68: 905585614
+      FD_Dungeon_Doors_69: -2113571361
+      FD_Dungeon_Doors_7: 646662540
+      FD_Dungeon_Doors_70: -1886723744
+      FD_Dungeon_Doors_71: -32473941
+      FD_Dungeon_Doors_72: 1156343264
+      FD_Dungeon_Doors_73: 166996237
+      FD_Dungeon_Doors_74: 1558888872
+      FD_Dungeon_Doors_75: -1349017883
+      FD_Dungeon_Doors_76: -1470410186
       FD_Dungeon_Doors_77: 1985267813
-      FD_Dungeon_Doors_166: -1525289908
-      FD_Dungeon_Doors_214: -2068386305
-      FD_Dungeon_Doors_110: 1338400181
-      FD_Dungeon_Doors_163: -320347315
+      FD_Dungeon_Doors_78: -1113231072
+      FD_Dungeon_Doors_79: -962174199
+      FD_Dungeon_Doors_8: 1761736183
+      FD_Dungeon_Doors_80: 1436632765
+      FD_Dungeon_Doors_81: 744709226
+      FD_Dungeon_Doors_82: 1913726603
+      FD_Dungeon_Doors_83: -1995530789
+      FD_Dungeon_Doors_84: 197119601
+      FD_Dungeon_Doors_85: 870254267
+      FD_Dungeon_Doors_86: -496626110
+      FD_Dungeon_Doors_87: -1264338598
       FD_Dungeon_Doors_88: 757992747
-      FD_Dungeon_Doors_206: -1486434987
-  spritePackingTag: 
+      FD_Dungeon_Doors_89: -656484764
+      FD_Dungeon_Doors_9: -2017977623
+      FD_Dungeon_Doors_90: -1852925133
+      FD_Dungeon_Doors_91: 55220581
+      FD_Dungeon_Doors_92: 1460283401
+      FD_Dungeon_Doors_93: -1723068000
+      FD_Dungeon_Doors_94: -1118111161
+      FD_Dungeon_Doors_95: 1848882633
+      FD_Dungeon_Doors_96: -1406344081
+      FD_Dungeon_Doors_97: 129940436
+      FD_Dungeon_Doors_98: 130574161
+      FD_Dungeon_Doors_99: -104073315
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
