@@ -19,6 +19,7 @@ public class IceSliding : MonoBehaviour
     private Vector2 slideDirection;
     private bool isSliding = false;
     private bool isOnIce = false;
+    private bool isAttacking = false;
 
     void Start()
     {
@@ -251,4 +252,26 @@ public class IceSliding : MonoBehaviour
         // Adjust sprite direction for left/right
         HandleSpriteFlip();
     }
+
+    // Mouse click handling for the attacking animation
+    void Update()
+    {
+        if (Mouse.current.leftButton.isPressed) // Check if mouse button is clicked
+        {
+            if (!isAttacking) // If not already attacking, trigger attack
+            {
+                isAttacking = true;
+                animator.SetBool("attacking", true); // Set attacking parameter to true
+                StartCoroutine(ResetAttack()); // Start coroutine to reset attack after animation
+            }
+        }
+    }
+
+    private IEnumerator ResetAttack()
+    {
+        yield return new WaitForSeconds(0.3f); // Wait for attack animation to finish (adjust as necessary)
+        isAttacking = false;
+        animator.SetBool("attacking", false); // Reset attacking parameter
+    }
+
 }
