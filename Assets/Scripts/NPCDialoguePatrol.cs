@@ -80,6 +80,9 @@ public class NPCDialoguePatrol : MonoBehaviour
     
     void Update()
     {
+
+
+
         // --- Dialogue Mode ---
         // If we're already in dialogue, check for the E key to advance dialogue.
         if (inDialogue)

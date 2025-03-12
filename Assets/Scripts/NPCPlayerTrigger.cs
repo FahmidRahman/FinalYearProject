@@ -64,6 +64,8 @@ public class NPCPlayerTrigger : MonoBehaviour
 
     void Update()
     {
+
+        
         switch (currentState)
         {
             case NPCState.PATROL:

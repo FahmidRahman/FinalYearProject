@@ -37,8 +37,12 @@ public class NPCPatrol : MonoBehaviour
         }
     }
 
+
     void Update()
     {
+
+
+
         if (patrolPoints.Length == 0 || waiting)
             return;
 

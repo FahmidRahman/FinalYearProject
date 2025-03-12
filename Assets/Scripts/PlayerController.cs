@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     }
 
     private void FixedUpdate() {
+
+
         if(movementInput != Vector2.zero) {
             bool move = tryMove(movementInput);
 
