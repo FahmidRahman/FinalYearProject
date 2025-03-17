@@ -16,7 +16,11 @@ public class rockEnemyScript : Enemy
 
     private Rigidbody2D rb;
     private Animator animator;
-    private bool hasIdled = false; // flag to trigger idle animation only once when player enters the chase radius
+    private bool hasIdled = false; // Flag to trigger idle animation only once when player enters the chase radius
+
+    // Movement variables computed in Update and used in FixedUpdate
+    private Vector2 moveTarget = Vector2.zero;
+    private bool shouldMove = false;
 
     void Start() {
         target = GameObject.FindWithTag("Player").transform;
@@ -32,9 +36,18 @@ public class rockEnemyScript : Enemy
     }
 
     void Update() {
-        // Only chase if not currently being knocked back
+        // Only update state if not knocked back.
         if (!isKnocked) {
             CheckDistance();
+        }
+    }
+
+    // Move enemy using physics updates.
+    void FixedUpdate() {
+        if (!isKnocked && shouldMove) {
+            // Move towards the target position computed in Update using FixedDeltaTime.
+            Vector2 newPos = Vector2.MoveTowards(rb.position, moveTarget, moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(newPos);
         }
     }
 
@@ -48,13 +61,15 @@ public class rockEnemyScript : Enemy
             animator.SetBool("isWalkingX", false);
             animator.SetBool("isWalkingUp", false);
             animator.SetBool("isWalkingDown", false);
-            hasIdled = false; // Reset so idle will trigger again on re-entry.
+            hasIdled = false; // Reset so idle triggers again on re-entry.
+            shouldMove = false;
             return;
         }
 
         // When the player enters the radius, play idle animation for one second if not already done.
         if (!hasIdled) {
             StartCoroutine(IdleThenChase());
+            shouldMove = false;
             return;
         }
 
@@ -62,21 +77,21 @@ public class rockEnemyScript : Enemy
         if (distance <= chaseRadius && distance > attackRadius) {
             // Calculate movement direction.
             Vector3 direction = (target.position - transform.position).normalized;
-            
+
             // Determine and set the correct walking animation.
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
                 animator.SetBool("isWalkingX", true);
                 animator.SetBool("isWalkingUp", false);
                 animator.SetBool("isWalkingDown", false);
                 // Flip the sprite based on horizontal direction (default is right).
-                if(direction.x < 0) {
+                if (direction.x < 0) {
                     transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
                 } else {
                     transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
                 }
             } else {
                 animator.SetBool("isWalkingX", false);
-                if(direction.y > 0) {
+                if (direction.y > 0) {
                     animator.SetBool("isWalkingUp", true);
                     animator.SetBool("isWalkingDown", false);
                 } else {
@@ -89,8 +104,14 @@ public class rockEnemyScript : Enemy
             animator.SetBool("isAsleep", false);
             animator.SetBool("isIdle", false);
 
-            // Move toward the player.
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            // Set the moveTarget to the player's current position.
+            moveTarget = target.position;
+            shouldMove = true;
+        }
+        else if (distance <= attackRadius) {
+            // When very close (within attack range), stop moving.
+            shouldMove = false;
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -106,12 +127,9 @@ public class rockEnemyScript : Enemy
         hasIdled = true;
     }
 
-    // This method is triggered when any collider marked as a trigger touches this enemy's collider.
+    // Trigger knockback when the player's attack collider hits the enemy.
     void OnTriggerEnter2D(Collider2D other) {
-        // Check if the collider belongs to the player's attack collider.
-        // Make sure the player's attack collider is tagged "PlayerAttack" in the editor.
         if (other.CompareTag("PlayerAttack") && !isKnocked) {
-            // Calculate knockback direction: enemy is pushed away from the attack source.
             Vector2 knockDirection = (transform.position - other.transform.position).normalized;
             StartCoroutine(ApplyKnockback(knockDirection));
         }
@@ -119,16 +137,9 @@ public class rockEnemyScript : Enemy
 
     IEnumerator ApplyKnockback(Vector2 direction) {
         isKnocked = true;
-
-        // Apply knockback force by setting the rigidbody's velocity.
         rb.velocity = direction * knockbackForce;
-
-        // Wait for the duration of knockback.
         yield return new WaitForSeconds(knockbackDuration);
-
-        // Reset velocity to zero so enemy stops being pushed.
         rb.velocity = Vector2.zero;
-
         isKnocked = false;
     }
 }
