@@ -21,6 +21,8 @@ public class EnemyPlayerKnockback : MonoBehaviour
             {
                 // Apply an impulse force for knockback.
                 playerRb.AddForce(knockbackDirection * playerKnockbackForce, ForceMode2D.Impulse);
+                PlayerHealthManager.instance.TakeDamage(1);
+
                 // Start a coroutine to stop the knockback after the specified duration.
                 StartCoroutine(EndKnockback(playerRb));
             }

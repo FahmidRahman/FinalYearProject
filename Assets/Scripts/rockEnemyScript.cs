@@ -127,9 +127,26 @@ public class rockEnemyScript : Enemy
         hasIdled = true;
     }
 
-    // Trigger knockback when the player's attack collider hits the enemy.
+    // When the enemy's trigger collider is hit by the player's attack.
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("PlayerAttack") && !isKnocked) {
+            // Subtract damage.
+            TakeDamage(1);
+            
+            // If enemy dies, cancel any knockback effect on the player.
+            if (health <= 0) {
+                GameObject playerObj = GameObject.FindWithTag("Player");
+                if (playerObj != null) {
+                    Rigidbody2D playerRb = playerObj.GetComponent<Rigidbody2D>();
+                    if (playerRb != null) {
+                        playerRb.velocity = Vector2.zero;
+                    }
+                }
+                // Optionally, exit here so no knockback is applied.
+                return;
+            }
+            
+            // Otherwise, apply knockback to the enemy.
             Vector2 knockDirection = (transform.position - other.transform.position).normalized;
             StartCoroutine(ApplyKnockback(knockDirection));
         }
