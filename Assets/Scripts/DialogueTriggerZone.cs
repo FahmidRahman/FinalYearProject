@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DialogueTriggerZone : MonoBehaviour
 {
-    public NPCPlayerTrigger npcDialoguePatrol; // Assign this in the Inspector.
+    public NPCPlayerTrigger npcDialoguePatrol;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {

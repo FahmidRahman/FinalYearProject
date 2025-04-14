@@ -101,32 +101,23 @@ public class IceSliding : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ice"))
-        {
+        if (other.CompareTag("Ice")) {
             isOnIce = true; // Player is on ice
             
-            // Determine entry direction and force strict cardinal movement
-            if (Mathf.Abs(movementInput.x) > Mathf.Abs(movementInput.y))
-            {
-                // Coming from left or right → Force horizontal sliding
+            // Determine entry direction and restrict diagonal sliding on ice
+            if (Mathf.Abs(movementInput.x) > Mathf.Abs(movementInput.y)) {
                 slideDirection = new Vector2(Mathf.Sign(movementInput.x), 0);
             }
-            else
-            {
-                // Coming from top or bottom → Force vertical sliding
+            else {
                 slideDirection = new Vector2(0, Mathf.Sign(movementInput.y));
             }
-
-            // Special case: If entering ice from left or right with a downward diagonal, force horizontal
-            if ((movementInput.x != 0) && (movementInput.y < 0) && Mathf.Abs(movementInput.x) >= Mathf.Abs(movementInput.y))
-            {
-                slideDirection = new Vector2(Mathf.Sign(movementInput.x), 0); // Force left/right
+            if ((movementInput.x != 0) && (movementInput.y < 0) && Mathf.Abs(movementInput.x) >= Mathf.Abs(movementInput.y)) {
+                slideDirection = new Vector2(Mathf.Sign(movementInput.x), 0);
             }
 
             UpdateSlidingAnimation();
             ResetAnimation();
-            if (slideDirection != Vector2.zero) // Start sliding immediately if input is present
-            {
+            if (slideDirection != Vector2.zero) {
                 isSliding = true;
             }
         }

@@ -244,12 +244,11 @@ public class NPCDialoguePatrol : MonoBehaviour
         inDialogue = true;
         dialogueIndex = 0;
         
-        // Optionally, have the NPC face the player.
         animator.SetBool("isWalking", false);
         animator.SetBool("isWalkingUp", false);
         animator.SetBool("isWalkingDown", false);
         
-        // *** Added: Disable player's movement ***
+        // disable player movement whilst speaking to the NPC
         if (playerTransform != null)
         {
             var playerController = playerTransform.GetComponent<PlayerController>();
@@ -259,7 +258,7 @@ public class NPCDialoguePatrol : MonoBehaviour
             }
         }
         
-        // Show the dialogue UI and set the text.
+        // Show the dialogue UI and text can be customisable within unity inspector
         if (dialogueBox != null)
         {
             dialogueBox.SetActive(true);

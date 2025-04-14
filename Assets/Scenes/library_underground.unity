@@ -29496,6 +29496,7 @@ MonoBehaviour:
   - I see you have found me.
   - This cave is beneath the library.
   - I have consulted you here to address some things about your family.
+  - You must collect the 3 legendary orbs to restore peace to this world.
   dialogueBox: {fileID: 1063771127}
   dialogueText: {fileID: 1063771126}
 --- !u!1 &2035112114

@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
         health = maxHealth.initialValue;
     }
 
-    // Call this method to subtract damage from the enemy.
+    // call this method to subtract damage from the enemy
     public void TakeDamage(float damage)
     {
         health -= damage;
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // Override this method in subclasses if you need additional death behavior.
+    // destroy enemy when 0 health
     public virtual void Die()
     {
         Destroy(gameObject);

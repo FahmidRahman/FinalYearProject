@@ -3,7 +3,7 @@ guid: 6d5150c4699ed7f46b10c294fcb926e3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -4053,196 +4056,195 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_Desert_Ground_50: 241795757
-      FD_Desert_Ground_37: -529587103
-      FD_Desert_Ground_173: 1786537849
-      FD_Desert_Ground_80: 1759035927
-      FD_Desert_Ground_39: 1328851761
-      FD_Desert_Ground_149: -440895380
-      FD_Desert_Ground_100: 1095979394
-      FD_Desert_Ground_43: -1173674254
-      FD_Desert_Ground_22: 536735476
-      FD_Desert_Ground_59: 329132130
-      FD_Desert_Ground_61: 1201767731
-      FD_Desert_Ground_134: -1008486750
-      FD_Desert_Ground_164: 1107279497
-      FD_Desert_Ground_95: -1690968494
-      FD_Desert_Ground_74: -349074761
-      FD_Desert_Ground_175: 998323126
-      FD_Desert_Ground_136: -1688126302
-      FD_Desert_Ground_94: 1990240601
-      FD_Desert_Ground_64: 1937159014
-      FD_Desert_Ground_159: -1550932409
-      FD_Desert_Ground_148: 669688450
-      FD_Desert_Ground_69: 1108953206
-      FD_Desert_Ground_6: -502443708
-      FD_Desert_Ground_14: -1475441937
-      FD_Desert_Ground_110: -263231135
-      FD_Desert_Ground_82: 1717412908
-      FD_Desert_Ground_42: -1652938162
-      FD_Desert_Ground_140: -1581546762
       FD_Desert_Ground_0: 2023528421
-      FD_Desert_Ground_75: -1585022052
-      FD_Desert_Ground_138: 1236996489
-      FD_Desert_Ground_93: -3202822
-      FD_Desert_Ground_48: 100256136
-      FD_Desert_Ground_150: -1865906402
-      FD_Desert_Ground_104: -1884250831
-      FD_Desert_Ground_30: -572725456
-      FD_Desert_Ground_49: -120541226
-      FD_Desert_Ground_172: 724190186
-      FD_Desert_Ground_147: 958834448
-      FD_Desert_Ground_90: 1146529414
-      FD_Desert_Ground_117: 715159157
-      FD_Desert_Ground_145: 8921383
-      FD_Desert_Ground_28: -357187294
-      FD_Desert_Ground_73: -597285953
-      FD_Desert_Ground_141: -91221414
-      FD_Desert_Ground_62: -923187958
-      FD_Desert_Ground_55: 1875865140
-      FD_Desert_Ground_92: 644186056
-      FD_Desert_Ground_5: -174078857
-      FD_Desert_Ground_154: 874663045
-      FD_Desert_Ground_35: -843129339
-      FD_Desert_Ground_167: 1264858988
-      FD_Desert_Ground_96: 777059459
+      FD_Desert_Ground_1: 1054393852
+      FD_Desert_Ground_10: 1491033535
+      FD_Desert_Ground_100: 1095979394
+      FD_Desert_Ground_101: 482869540
+      FD_Desert_Ground_102: -677496069
       FD_Desert_Ground_103: 859318901
-      FD_Desert_Ground_158: 1008861261
-      FD_Desert_Ground_78: 2124269760
+      FD_Desert_Ground_104: -1884250831
       FD_Desert_Ground_105: 1627656992
-      FD_Desert_Ground_132: 1264434462
-      FD_Desert_Ground_77: -1676259759
-      FD_Desert_Ground_25: -1187957906
-      FD_Desert_Ground_38: 600256093
-      FD_Desert_Ground_157: 1075466034
-      FD_Desert_Ground_178: -1976893557
-      FD_Desert_Ground_171: 1706082844
-      FD_Desert_Ground_131: -2060011978
-      FD_Desert_Ground_88: 248631201
-      FD_Desert_Ground_4: -324538012
-      FD_Desert_Ground_58: -277406811
-      FD_Desert_Ground_63: -1040671167
-      FD_Desert_Ground_40: -235714432
-      FD_Desert_Ground_165: -52028888
-      FD_Desert_Ground_31: -1863453955
-      FD_Desert_Ground_7: -920225781
-      FD_Desert_Ground_23: -1158537880
-      FD_Desert_Ground_86: -1437114625
-      FD_Desert_Ground_19: -662581045
-      FD_Desert_Ground_151: 1791336964
-      FD_Desert_Ground_72: -943884717
-      FD_Desert_Ground_142: -1520554096
-      FD_Desert_Ground_133: 1296298149
-      FD_Desert_Ground_29: 1674987406
-      FD_Desert_Ground_15: -18875860
-      FD_Desert_Ground_46: 1726119107
-      FD_Desert_Ground_57: 1570629438
-      FD_Desert_Ground_127: -1795813652
       FD_Desert_Ground_106: -656238668
-      FD_Desert_Ground_3: 734871801
-      FD_Desert_Ground_123: 1175587890
-      FD_Desert_Ground_125: 1189911064
-      FD_Desert_Ground_163: -879046188
-      FD_Desert_Ground_34: 648816356
-      FD_Desert_Ground_8: 718223293
+      FD_Desert_Ground_107: -75722443
+      FD_Desert_Ground_108: -1075677029
+      FD_Desert_Ground_109: -977115610
+      FD_Desert_Ground_11: -935100352
+      FD_Desert_Ground_110: -263231135
+      FD_Desert_Ground_111: -1296830039
       FD_Desert_Ground_112: -487730248
+      FD_Desert_Ground_113: 1610813918
+      FD_Desert_Ground_114: -1319197643
+      FD_Desert_Ground_115: -568856986
+      FD_Desert_Ground_116: -75158741
+      FD_Desert_Ground_117: 715159157
+      FD_Desert_Ground_118: -1305152130
+      FD_Desert_Ground_119: -748414193
       FD_Desert_Ground_12: -262496374
-      FD_Desert_Ground_32: 1056739681
+      FD_Desert_Ground_120: -481879028
+      FD_Desert_Ground_121: -1194085889
+      FD_Desert_Ground_122: -773819865
+      FD_Desert_Ground_123: 1175587890
+      FD_Desert_Ground_124: 2109503032
+      FD_Desert_Ground_125: 1189911064
+      FD_Desert_Ground_126: 956204301
+      FD_Desert_Ground_127: -1795813652
+      FD_Desert_Ground_128: -256554741
+      FD_Desert_Ground_129: -1999583923
+      FD_Desert_Ground_13: -790070448
+      FD_Desert_Ground_130: -1466425002
+      FD_Desert_Ground_131: -2060011978
+      FD_Desert_Ground_132: 1264434462
+      FD_Desert_Ground_133: 1296298149
+      FD_Desert_Ground_134: -1008486750
+      FD_Desert_Ground_135: 498230161
+      FD_Desert_Ground_136: -1688126302
+      FD_Desert_Ground_137: -1293199983
+      FD_Desert_Ground_138: 1236996489
+      FD_Desert_Ground_139: -731438070
+      FD_Desert_Ground_14: -1475441937
+      FD_Desert_Ground_140: -1581546762
+      FD_Desert_Ground_141: -91221414
+      FD_Desert_Ground_142: -1520554096
+      FD_Desert_Ground_143: 678710074
+      FD_Desert_Ground_144: 1806767381
+      FD_Desert_Ground_145: 8921383
+      FD_Desert_Ground_146: 1836622641
+      FD_Desert_Ground_147: 958834448
+      FD_Desert_Ground_148: 669688450
+      FD_Desert_Ground_149: -440895380
+      FD_Desert_Ground_15: -18875860
+      FD_Desert_Ground_150: -1865906402
+      FD_Desert_Ground_151: 1791336964
+      FD_Desert_Ground_152: -626942640
+      FD_Desert_Ground_153: 275080574
+      FD_Desert_Ground_154: 874663045
+      FD_Desert_Ground_155: 1699545216
+      FD_Desert_Ground_156: -1496740802
+      FD_Desert_Ground_157: 1075466034
+      FD_Desert_Ground_158: 1008861261
+      FD_Desert_Ground_159: -1550932409
+      FD_Desert_Ground_16: -553397656
+      FD_Desert_Ground_160: -586292553
+      FD_Desert_Ground_161: -791475452
+      FD_Desert_Ground_162: -914005168
+      FD_Desert_Ground_163: -879046188
+      FD_Desert_Ground_164: 1107279497
+      FD_Desert_Ground_165: -52028888
+      FD_Desert_Ground_166: 494553904
+      FD_Desert_Ground_167: 1264858988
+      FD_Desert_Ground_168: 1037899809
+      FD_Desert_Ground_169: 22295742
+      FD_Desert_Ground_17: 1628607545
+      FD_Desert_Ground_170: 2068195575
+      FD_Desert_Ground_171: 1706082844
+      FD_Desert_Ground_172: 724190186
+      FD_Desert_Ground_173: 1786537849
+      FD_Desert_Ground_174: 408021615
+      FD_Desert_Ground_175: 998323126
+      FD_Desert_Ground_176: 416124278
+      FD_Desert_Ground_177: -629784724
+      FD_Desert_Ground_178: -1976893557
+      FD_Desert_Ground_179: -911034713
+      FD_Desert_Ground_18: 1816643101
+      FD_Desert_Ground_180: 1324997400
+      FD_Desert_Ground_181: -1916150818
+      FD_Desert_Ground_182: 1357086124
+      FD_Desert_Ground_183: 1812763585
+      FD_Desert_Ground_184: 1326259454
+      FD_Desert_Ground_185: -545034260
+      FD_Desert_Ground_186: -2083739868
+      FD_Desert_Ground_19: -662581045
+      FD_Desert_Ground_2: 1922976215
+      FD_Desert_Ground_20: -1472406823
+      FD_Desert_Ground_21: 782342772
+      FD_Desert_Ground_22: 536735476
+      FD_Desert_Ground_23: -1158537880
+      FD_Desert_Ground_24: -393791986
+      FD_Desert_Ground_25: -1187957906
+      FD_Desert_Ground_26: -527728109
       FD_Desert_Ground_27: 1335159556
+      FD_Desert_Ground_28: -357187294
+      FD_Desert_Ground_29: 1674987406
+      FD_Desert_Ground_3: 734871801
+      FD_Desert_Ground_30: -572725456
+      FD_Desert_Ground_31: -1863453955
+      FD_Desert_Ground_32: 1056739681
+      FD_Desert_Ground_33: 1974880852
+      FD_Desert_Ground_34: 648816356
+      FD_Desert_Ground_35: -843129339
+      FD_Desert_Ground_36: 1569069836
+      FD_Desert_Ground_37: -529587103
+      FD_Desert_Ground_38: 600256093
+      FD_Desert_Ground_39: 1328851761
+      FD_Desert_Ground_4: -324538012
+      FD_Desert_Ground_40: -235714432
+      FD_Desert_Ground_41: 491994454
+      FD_Desert_Ground_42: -1652938162
+      FD_Desert_Ground_43: -1173674254
       FD_Desert_Ground_44: 1289733756
       FD_Desert_Ground_45: 962064307
-      FD_Desert_Ground_126: 956204301
-      FD_Desert_Ground_128: -256554741
-      FD_Desert_Ground_10: 1491033535
-      FD_Desert_Ground_87: -1710416406
-      FD_Desert_Ground_184: 1326259454
-      FD_Desert_Ground_9: 676743431
-      FD_Desert_Ground_54: -583628896
-      FD_Desert_Ground_79: 264132750
-      FD_Desert_Ground_11: -935100352
-      FD_Desert_Ground_107: -75722443
-      FD_Desert_Ground_114: -1319197643
-      FD_Desert_Ground_67: 393699723
-      FD_Desert_Ground_137: -1293199983
-      FD_Desert_Ground_135: 498230161
-      FD_Desert_Ground_52: -774429785
-      FD_Desert_Ground_66: -252929035
-      FD_Desert_Ground_76: -181089291
-      FD_Desert_Ground_130: -1466425002
-      FD_Desert_Ground_156: -1496740802
-      FD_Desert_Ground_83: -944012280
-      FD_Desert_Ground_85: -1513778152
-      FD_Desert_Ground_169: 22295742
-      FD_Desert_Ground_89: 2137403829
-      FD_Desert_Ground_181: -1916150818
-      FD_Desert_Ground_102: -677496069
-      FD_Desert_Ground_71: -1392456428
-      FD_Desert_Ground_129: -1999583923
-      FD_Desert_Ground_97: -882488445
-      FD_Desert_Ground_146: 1836622641
-      FD_Desert_Ground_70: -1335349792
-      FD_Desert_Ground_13: -790070448
-      FD_Desert_Ground_84: -1313550943
-      FD_Desert_Ground_115: -568856986
-      FD_Desert_Ground_68: 1242745519
-      FD_Desert_Ground_111: -1296830039
-      FD_Desert_Ground_177: -629784724
-      FD_Desert_Ground_153: 275080574
-      FD_Desert_Ground_109: -977115610
-      FD_Desert_Ground_33: 1974880852
-      FD_Desert_Ground_182: 1357086124
-      FD_Desert_Ground_91: 1766269543
-      FD_Desert_Ground_17: 1628607545
-      FD_Desert_Ground_152: -626942640
-      FD_Desert_Ground_139: -731438070
-      FD_Desert_Ground_122: -773819865
-      FD_Desert_Ground_60: 144489112
-      FD_Desert_Ground_16: -553397656
-      FD_Desert_Ground_101: 482869540
-      FD_Desert_Ground_160: -586292553
-      FD_Desert_Ground_41: 491994454
-      FD_Desert_Ground_124: 2109503032
-      FD_Desert_Ground_36: 1569069836
-      FD_Desert_Ground_51: -223461561
-      FD_Desert_Ground_162: -914005168
-      FD_Desert_Ground_179: -911034713
-      FD_Desert_Ground_143: 678710074
-      FD_Desert_Ground_81: 728669151
-      FD_Desert_Ground_155: 1699545216
-      FD_Desert_Ground_183: 1812763585
-      FD_Desert_Ground_20: -1472406823
-      FD_Desert_Ground_119: -748414193
-      FD_Desert_Ground_98: -507731950
-      FD_Desert_Ground_186: -2083739868
-      FD_Desert_Ground_24: -393791986
-      FD_Desert_Ground_26: -527728109
-      FD_Desert_Ground_108: -1075677029
-      FD_Desert_Ground_176: 416124278
-      FD_Desert_Ground_65: 442867882
-      FD_Desert_Ground_118: -1305152130
-      FD_Desert_Ground_121: -1194085889
-      FD_Desert_Ground_180: 1324997400
-      FD_Desert_Ground_166: 494553904
-      FD_Desert_Ground_18: 1816643101
-      FD_Desert_Ground_1: 1054393852
-      FD_Desert_Ground_120: -481879028
+      FD_Desert_Ground_46: 1726119107
       FD_Desert_Ground_47: -1947192379
-      FD_Desert_Ground_168: 1037899809
-      FD_Desert_Ground_99: -1312809807
-      FD_Desert_Ground_144: 1806767381
-      FD_Desert_Ground_21: 782342772
-      FD_Desert_Ground_2: 1922976215
-      FD_Desert_Ground_185: -545034260
+      FD_Desert_Ground_48: 100256136
+      FD_Desert_Ground_49: -120541226
+      FD_Desert_Ground_5: -174078857
+      FD_Desert_Ground_50: 241795757
+      FD_Desert_Ground_51: -223461561
+      FD_Desert_Ground_52: -774429785
       FD_Desert_Ground_53: -1172477068
+      FD_Desert_Ground_54: -583628896
+      FD_Desert_Ground_55: 1875865140
       FD_Desert_Ground_56: 1403428091
-      FD_Desert_Ground_116: -75158741
-      FD_Desert_Ground_170: 2068195575
-      FD_Desert_Ground_161: -791475452
-      FD_Desert_Ground_174: 408021615
-      FD_Desert_Ground_113: 1610813918
-  spritePackingTag: 
+      FD_Desert_Ground_57: 1570629438
+      FD_Desert_Ground_58: -277406811
+      FD_Desert_Ground_59: 329132130
+      FD_Desert_Ground_6: -502443708
+      FD_Desert_Ground_60: 144489112
+      FD_Desert_Ground_61: 1201767731
+      FD_Desert_Ground_62: -923187958
+      FD_Desert_Ground_63: -1040671167
+      FD_Desert_Ground_64: 1937159014
+      FD_Desert_Ground_65: 442867882
+      FD_Desert_Ground_66: -252929035
+      FD_Desert_Ground_67: 393699723
+      FD_Desert_Ground_68: 1242745519
+      FD_Desert_Ground_69: 1108953206
+      FD_Desert_Ground_7: -920225781
+      FD_Desert_Ground_70: -1335349792
+      FD_Desert_Ground_71: -1392456428
+      FD_Desert_Ground_72: -943884717
+      FD_Desert_Ground_73: -597285953
+      FD_Desert_Ground_74: -349074761
+      FD_Desert_Ground_75: -1585022052
+      FD_Desert_Ground_76: -181089291
+      FD_Desert_Ground_77: -1676259759
+      FD_Desert_Ground_78: 2124269760
+      FD_Desert_Ground_79: 264132750
+      FD_Desert_Ground_8: 718223293
+      FD_Desert_Ground_80: 1759035927
+      FD_Desert_Ground_81: 728669151
+      FD_Desert_Ground_82: 1717412908
+      FD_Desert_Ground_83: -944012280
+      FD_Desert_Ground_84: -1313550943
+      FD_Desert_Ground_85: -1513778152
+      FD_Desert_Ground_86: -1437114625
+      FD_Desert_Ground_87: -1710416406
+      FD_Desert_Ground_88: 248631201
+      FD_Desert_Ground_89: 2137403829
+      FD_Desert_Ground_9: 676743431
+      FD_Desert_Ground_90: 1146529414
+      FD_Desert_Ground_91: 1766269543
+      FD_Desert_Ground_92: 644186056
+      FD_Desert_Ground_93: -3202822
+      FD_Desert_Ground_94: 1990240601
+      FD_Desert_Ground_95: -1690968494
+      FD_Desert_Ground_96: 777059459
+      FD_Desert_Ground_97: -882488445
+      FD_Desert_Ground_98: -507731950
+      FD_Desert_Ground_99: -1312809807
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

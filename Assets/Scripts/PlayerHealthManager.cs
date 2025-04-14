@@ -56,7 +56,6 @@ public class PlayerHealthManager : MonoBehaviour
     /// Call this method to apply damage to the player.
     /// </summary>
     public void TakeDamage(int damage) {
-        // Do not take damage if currently invulnerable.
         if (invulnerable)
             return;
 
@@ -66,7 +65,7 @@ public class PlayerHealthManager : MonoBehaviour
         UpdateHeartUI();
 
         if (currentHearts <= 0) {
-            // Start the death handling coroutine.
+            // Start the death handling coroutine
             StartCoroutine(HandlePlayerDeath());
         }
     }
@@ -97,33 +96,31 @@ public class PlayerHealthManager : MonoBehaviour
     /// Handles player death: plays death animation, waits, teleports player, resets health, and grants temporary invulnerability.
     /// </summary>
     IEnumerator HandlePlayerDeath() {
-        // Make the player invulnerable to avoid additional damage.
+        // Make the player invulnerable to avoid additional damage
         invulnerable = true;
 
-        // Get the player's Animator.
+        // Get the player's animator and play death animation
         Animator playerAnim = player.GetComponent<Animator>();
         if (playerAnim != null) {
-            // Trigger the death animation.
             playerAnim.SetTrigger("player_death");
         }
 
-        // Wait for the death animation to complete.
         yield return new WaitForSeconds(deathAnimationDuration);
 
-        // Reset the Animator to its default state.
+        // Reset the animator to default state to play idol animation
         if (playerAnim != null) {
             playerAnim.Rebind();
             playerAnim.Update(0f);
         }
 
-        // Teleport the player to the checkpoint.
+        // Teleport the player to the most recent checkpoint
         TeleportPlayerToCheckpoint();
 
-        // Reset health.
+        // Reset health to max
         currentHearts = maxHearts;
         UpdateHeartUI();
 
-        // Keep the player invulnerable for the additional invulnerabilityDuration.
+        // Keep the player invulnerable for the additional invulnerabilityDuration
         yield return new WaitForSeconds(invulnerabilityDuration);
 
         invulnerable = false;
