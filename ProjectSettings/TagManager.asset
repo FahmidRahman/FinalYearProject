@@ -9,11 +9,12 @@ TagManager:
   - ApproachTrigger
   - enemy
   - PlayerAttack
+  - Rock
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Rock
   - Water
   - UI
   - 
