@@ -2,25 +2,36 @@ using UnityEngine;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public PressurePlate[] pressurePlates;
-    public GameObject doorToDestroy;
+    public int totalPlates = 4;
+    private int currentPressed = 0;
 
-    void Update()
+    public GameObject doorLocked;
+    public GameObject doorUnlocked;
+
+    public void PlatePressed()
     {
-        if (AllPlatesActivated())
+        currentPressed++;
+
+        if (currentPressed == totalPlates)
         {
-            doorToDestroy.SetActive(false); // Or use Destroy(doorToDestroy);
-            enabled = false; // Stop checking once done
+            Debug.Log("Puzzle complete! Door opened.");
+
+            if (doorLocked != null) doorLocked.SetActive(false);
+            if (doorUnlocked != null) doorUnlocked.SetActive(true);
         }
     }
 
-    bool AllPlatesActivated()
+    public void PlateReleased()
     {
-        foreach (PressurePlate plate in pressurePlates)
+        currentPressed--;
+
+        // Optional: revert if a rock is removed
+        if (currentPressed < totalPlates)
         {
-            if (!plate.isActivated)
-                return false;
+            if (doorLocked != null) doorLocked.SetActive(true);
+            if (doorUnlocked != null) doorUnlocked.SetActive(false);
+
+            Debug.Log("Plate released. Door closed again.");
         }
-        return true;
     }
 }

@@ -2,11 +2,29 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
-    public bool isActivated { get; private set; }
+    public bool isPressed = false;
+    private PuzzleManager puzzleManager;
 
-    void Update()
+    private void Start()
     {
-        Collider2D rock = Physics2D.OverlapCircle(transform.position, 0.1f, LayerMask.GetMask("Rock"));
-        isActivated = rock != null;
+        puzzleManager = FindFirstObjectByType<PuzzleManager>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Rock") && !isPressed)
+        {
+            isPressed = true;
+            puzzleManager.PlatePressed();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Rock") && isPressed)
+        {
+            isPressed = false;
+            puzzleManager.PlateReleased();
+        }
     }
 }
