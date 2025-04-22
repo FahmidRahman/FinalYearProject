@@ -3,7 +3,7 @@ guid: a423edf8f48eb6d48849f07819dc6f93
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -3465,168 +3468,167 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FD_Dreams_Doors_24: 594189269
-      FD_Dreams_Doors_44: 214087090
-      FD_Dreams_Doors_12: 2101112059
-      FD_Dreams_Doors_46: 178651164
-      FD_Dreams_Doors_59: 1095284915
-      FD_Dreams_Doors_85: 1060043343
-      FD_Dreams_Doors_89: -1704334008
-      FD_Dreams_Doors_99: 1105467908
-      FD_Dreams_Doors_144: -628247700
-      FD_Dreams_Doors_51: -1607066305
-      FD_Dreams_Doors_2: -1856050102
-      FD_Dreams_Doors_105: 1872517340
-      FD_Dreams_Doors_8: -1937068240
-      FD_Dreams_Doors_62: -2005898141
-      FD_Dreams_Doors_76: -847291889
-      FD_Dreams_Doors_33: 1299841635
-      FD_Dreams_Doors_47: -1626347534
-      FD_Dreams_Doors_65: 803178194
-      FD_Dreams_Doors_79: -1252056453
-      FD_Dreams_Doors_127: -143274178
-      FD_Dreams_Doors_41: -1826122834
-      FD_Dreams_Doors_149: -105775907
-      FD_Dreams_Doors_114: 634987277
-      FD_Dreams_Doors_11: -2025430144
-      FD_Dreams_Doors_13: 620864332
-      FD_Dreams_Doors_37: 97029499
-      FD_Dreams_Doors_81: -854893889
-      FD_Dreams_Doors_92: -1500076121
-      FD_Dreams_Doors_36: 1147601619
-      FD_Dreams_Doors_52: 128347899
-      FD_Dreams_Doors_115: -1546911662
-      FD_Dreams_Doors_23: 1063687835
-      FD_Dreams_Doors_152: -45344436
-      FD_Dreams_Doors_140: -721428882
-      FD_Dreams_Doors_35: 2040649892
-      FD_Dreams_Doors_93: -1300066384
-      FD_Dreams_Doors_131: 519644380
-      FD_Dreams_Doors_113: 742916516
-      FD_Dreams_Doors_124: -1346935704
-      FD_Dreams_Doors_30: 1405940014
-      FD_Dreams_Doors_118: -435429149
-      FD_Dreams_Doors_104: 1200061968
-      FD_Dreams_Doors_7: 2082343987
-      FD_Dreams_Doors_69: 848053520
-      FD_Dreams_Doors_158: -108171710
-      FD_Dreams_Doors_103: -659976357
-      FD_Dreams_Doors_15: 778393451
-      FD_Dreams_Doors_38: 1453927730
-      FD_Dreams_Doors_128: 485055890
-      FD_Dreams_Doors_133: 1129835427
-      FD_Dreams_Doors_40: 801211914
-      FD_Dreams_Doors_150: 1376693983
-      FD_Dreams_Doors_26: -2137434357
-      FD_Dreams_Doors_31: -1726684706
-      FD_Dreams_Doors_29: 400073247
-      FD_Dreams_Doors_102: 1280571847
-      FD_Dreams_Doors_122: -232634102
-      FD_Dreams_Doors_117: -540476875
-      FD_Dreams_Doors_22: -1955045759
-      FD_Dreams_Doors_57: -187261878
-      FD_Dreams_Doors_82: 1698950777
-      FD_Dreams_Doors_64: 1124933729
-      FD_Dreams_Doors_25: -286093339
-      FD_Dreams_Doors_88: 270595526
-      FD_Dreams_Doors_139: 1904834556
-      FD_Dreams_Doors_108: -2134707993
-      FD_Dreams_Doors_6: 1874685587
-      FD_Dreams_Doors_54: -731295320
-      FD_Dreams_Doors_9: 1813270400
-      FD_Dreams_Doors_53: -1570280191
-      FD_Dreams_Doors_72: -47039074
-      FD_Dreams_Doors_110: -151412058
-      FD_Dreams_Doors_106: -534016723
-      FD_Dreams_Doors_27: 1244703239
-      FD_Dreams_Doors_111: -1149790079
-      FD_Dreams_Doors_84: 1535871683
-      FD_Dreams_Doors_97: 1286032139
-      FD_Dreams_Doors_135: -1229126825
+      FD_Dreams_Doors_0: -902253365
       FD_Dreams_Doors_1: -1326709798
-      FD_Dreams_Doors_95: 1812806248
-      FD_Dreams_Doors_60: -1811018928
-      FD_Dreams_Doors_56: 597345427
-      FD_Dreams_Doors_16: 623460172
-      FD_Dreams_Doors_134: -1403481452
       FD_Dreams_Doors_10: -1009413599
-      FD_Dreams_Doors_34: 569773265
-      FD_Dreams_Doors_77: -2137795392
-      FD_Dreams_Doors_55: 172207453
-      FD_Dreams_Doors_83: 1844075670
-      FD_Dreams_Doors_155: -924369095
-      FD_Dreams_Doors_5: -258432830
-      FD_Dreams_Doors_67: -157623169
-      FD_Dreams_Doors_116: 1784928370
-      FD_Dreams_Doors_71: -1098306366
-      FD_Dreams_Doors_132: -1056378873
-      FD_Dreams_Doors_58: 543310761
-      FD_Dreams_Doors_121: 474068422
-      FD_Dreams_Doors_129: -1626411119
-      FD_Dreams_Doors_73: 974375901
-      FD_Dreams_Doors_50: -1540021179
-      FD_Dreams_Doors_32: -152462507
-      FD_Dreams_Doors_39: 877406461
-      FD_Dreams_Doors_48: 1118437042
-      FD_Dreams_Doors_74: 556475503
-      FD_Dreams_Doors_147: 814275292
-      FD_Dreams_Doors_153: 1958016091
-      FD_Dreams_Doors_42: -2004169101
-      FD_Dreams_Doors_78: 1408365392
-      FD_Dreams_Doors_146: 496313728
-      FD_Dreams_Doors_154: 1694309150
-      FD_Dreams_Doors_66: 1336472389
-      FD_Dreams_Doors_14: -2062124160
-      FD_Dreams_Doors_68: -1781718081
-      FD_Dreams_Doors_156: 863213336
-      FD_Dreams_Doors_91: 963536956
-      FD_Dreams_Doors_21: -109900475
-      FD_Dreams_Doors_90: -1117472020
-      FD_Dreams_Doors_4: 1164562064
-      FD_Dreams_Doors_125: -979077501
+      FD_Dreams_Doors_100: -424516000
+      FD_Dreams_Doors_101: -1370448606
+      FD_Dreams_Doors_102: 1280571847
+      FD_Dreams_Doors_103: -659976357
+      FD_Dreams_Doors_104: 1200061968
+      FD_Dreams_Doors_105: 1872517340
+      FD_Dreams_Doors_106: -534016723
+      FD_Dreams_Doors_107: -1278085478
+      FD_Dreams_Doors_108: -2134707993
       FD_Dreams_Doors_109: 368937381
-      FD_Dreams_Doors_148: -1831256641
-      FD_Dreams_Doors_75: 1424874559
-      FD_Dreams_Doors_45: -1218012798
-      FD_Dreams_Doors_28: -141883697
-      FD_Dreams_Doors_98: 244439739
+      FD_Dreams_Doors_11: -2025430144
+      FD_Dreams_Doors_110: -151412058
+      FD_Dreams_Doors_111: -1149790079
+      FD_Dreams_Doors_112: -1440493864
+      FD_Dreams_Doors_113: 742916516
+      FD_Dreams_Doors_114: 634987277
+      FD_Dreams_Doors_115: -1546911662
+      FD_Dreams_Doors_116: 1784928370
+      FD_Dreams_Doors_117: -540476875
+      FD_Dreams_Doors_118: -435429149
       FD_Dreams_Doors_119: -1939045714
+      FD_Dreams_Doors_12: 2101112059
+      FD_Dreams_Doors_120: -1563537771
+      FD_Dreams_Doors_121: 474068422
+      FD_Dreams_Doors_122: -232634102
+      FD_Dreams_Doors_123: -1501538966
+      FD_Dreams_Doors_124: -1346935704
+      FD_Dreams_Doors_125: -979077501
+      FD_Dreams_Doors_126: 2120024263
+      FD_Dreams_Doors_127: -143274178
+      FD_Dreams_Doors_128: 485055890
+      FD_Dreams_Doors_129: -1626411119
+      FD_Dreams_Doors_13: 620864332
+      FD_Dreams_Doors_130: 1429470644
+      FD_Dreams_Doors_131: 519644380
+      FD_Dreams_Doors_132: -1056378873
+      FD_Dreams_Doors_133: 1129835427
+      FD_Dreams_Doors_134: -1403481452
+      FD_Dreams_Doors_135: -1229126825
+      FD_Dreams_Doors_136: -1785205648
       FD_Dreams_Doors_137: -763939940
       FD_Dreams_Doors_138: -2116148091
-      FD_Dreams_Doors_157: 1535475964
-      FD_Dreams_Doors_70: -1057884624
-      FD_Dreams_Doors_126: 2120024263
-      FD_Dreams_Doors_96: 27474679
-      FD_Dreams_Doors_63: -115573295
-      FD_Dreams_Doors_87: -1620040812
-      FD_Dreams_Doors_120: -1563537771
-      FD_Dreams_Doors_100: -424516000
-      FD_Dreams_Doors_112: -1440493864
-      FD_Dreams_Doors_49: 83366456
-      FD_Dreams_Doors_107: -1278085478
-      FD_Dreams_Doors_17: -1847612673
-      FD_Dreams_Doors_43: -2042959004
-      FD_Dreams_Doors_3: 417312337
-      FD_Dreams_Doors_80: 2041383470
-      FD_Dreams_Doors_101: -1370448606
-      FD_Dreams_Doors_151: 2072734981
-      FD_Dreams_Doors_0: -902253365
-      FD_Dreams_Doors_123: -1501538966
-      FD_Dreams_Doors_130: 1429470644
-      FD_Dreams_Doors_136: -1785205648
-      FD_Dreams_Doors_142: 1552624025
-      FD_Dreams_Doors_18: 1326022686
-      FD_Dreams_Doors_86: -416405074
-      FD_Dreams_Doors_94: 1904059330
-      FD_Dreams_Doors_19: 1355709253
-      FD_Dreams_Doors_143: -716814858
-      FD_Dreams_Doors_61: -111779199
-      FD_Dreams_Doors_20: -685616265
-      FD_Dreams_Doors_145: -1415143725
+      FD_Dreams_Doors_139: 1904834556
+      FD_Dreams_Doors_14: -2062124160
+      FD_Dreams_Doors_140: -721428882
       FD_Dreams_Doors_141: 513717717
-  spritePackingTag: 
+      FD_Dreams_Doors_142: 1552624025
+      FD_Dreams_Doors_143: -716814858
+      FD_Dreams_Doors_144: -628247700
+      FD_Dreams_Doors_145: -1415143725
+      FD_Dreams_Doors_146: 496313728
+      FD_Dreams_Doors_147: 814275292
+      FD_Dreams_Doors_148: -1831256641
+      FD_Dreams_Doors_149: -105775907
+      FD_Dreams_Doors_15: 778393451
+      FD_Dreams_Doors_150: 1376693983
+      FD_Dreams_Doors_151: 2072734981
+      FD_Dreams_Doors_152: -45344436
+      FD_Dreams_Doors_153: 1958016091
+      FD_Dreams_Doors_154: 1694309150
+      FD_Dreams_Doors_155: -924369095
+      FD_Dreams_Doors_156: 863213336
+      FD_Dreams_Doors_157: 1535475964
+      FD_Dreams_Doors_158: -108171710
+      FD_Dreams_Doors_16: 623460172
+      FD_Dreams_Doors_17: -1847612673
+      FD_Dreams_Doors_18: 1326022686
+      FD_Dreams_Doors_19: 1355709253
+      FD_Dreams_Doors_2: -1856050102
+      FD_Dreams_Doors_20: -685616265
+      FD_Dreams_Doors_21: -109900475
+      FD_Dreams_Doors_22: -1955045759
+      FD_Dreams_Doors_23: 1063687835
+      FD_Dreams_Doors_24: 594189269
+      FD_Dreams_Doors_25: -286093339
+      FD_Dreams_Doors_26: -2137434357
+      FD_Dreams_Doors_27: 1244703239
+      FD_Dreams_Doors_28: -141883697
+      FD_Dreams_Doors_29: 400073247
+      FD_Dreams_Doors_3: 417312337
+      FD_Dreams_Doors_30: 1405940014
+      FD_Dreams_Doors_31: -1726684706
+      FD_Dreams_Doors_32: -152462507
+      FD_Dreams_Doors_33: 1299841635
+      FD_Dreams_Doors_34: 569773265
+      FD_Dreams_Doors_35: 2040649892
+      FD_Dreams_Doors_36: 1147601619
+      FD_Dreams_Doors_37: 97029499
+      FD_Dreams_Doors_38: 1453927730
+      FD_Dreams_Doors_39: 877406461
+      FD_Dreams_Doors_4: 1164562064
+      FD_Dreams_Doors_40: 801211914
+      FD_Dreams_Doors_41: -1826122834
+      FD_Dreams_Doors_42: -2004169101
+      FD_Dreams_Doors_43: -2042959004
+      FD_Dreams_Doors_44: 214087090
+      FD_Dreams_Doors_45: -1218012798
+      FD_Dreams_Doors_46: 178651164
+      FD_Dreams_Doors_47: -1626347534
+      FD_Dreams_Doors_48: 1118437042
+      FD_Dreams_Doors_49: 83366456
+      FD_Dreams_Doors_5: -258432830
+      FD_Dreams_Doors_50: -1540021179
+      FD_Dreams_Doors_51: -1607066305
+      FD_Dreams_Doors_52: 128347899
+      FD_Dreams_Doors_53: -1570280191
+      FD_Dreams_Doors_54: -731295320
+      FD_Dreams_Doors_55: 172207453
+      FD_Dreams_Doors_56: 597345427
+      FD_Dreams_Doors_57: -187261878
+      FD_Dreams_Doors_58: 543310761
+      FD_Dreams_Doors_59: 1095284915
+      FD_Dreams_Doors_6: 1874685587
+      FD_Dreams_Doors_60: -1811018928
+      FD_Dreams_Doors_61: -111779199
+      FD_Dreams_Doors_62: -2005898141
+      FD_Dreams_Doors_63: -115573295
+      FD_Dreams_Doors_64: 1124933729
+      FD_Dreams_Doors_65: 803178194
+      FD_Dreams_Doors_66: 1336472389
+      FD_Dreams_Doors_67: -157623169
+      FD_Dreams_Doors_68: -1781718081
+      FD_Dreams_Doors_69: 848053520
+      FD_Dreams_Doors_7: 2082343987
+      FD_Dreams_Doors_70: -1057884624
+      FD_Dreams_Doors_71: -1098306366
+      FD_Dreams_Doors_72: -47039074
+      FD_Dreams_Doors_73: 974375901
+      FD_Dreams_Doors_74: 556475503
+      FD_Dreams_Doors_75: 1424874559
+      FD_Dreams_Doors_76: -847291889
+      FD_Dreams_Doors_77: -2137795392
+      FD_Dreams_Doors_78: 1408365392
+      FD_Dreams_Doors_79: -1252056453
+      FD_Dreams_Doors_8: -1937068240
+      FD_Dreams_Doors_80: 2041383470
+      FD_Dreams_Doors_81: -854893889
+      FD_Dreams_Doors_82: 1698950777
+      FD_Dreams_Doors_83: 1844075670
+      FD_Dreams_Doors_84: 1535871683
+      FD_Dreams_Doors_85: 1060043343
+      FD_Dreams_Doors_86: -416405074
+      FD_Dreams_Doors_87: -1620040812
+      FD_Dreams_Doors_88: 270595526
+      FD_Dreams_Doors_89: -1704334008
+      FD_Dreams_Doors_9: 1813270400
+      FD_Dreams_Doors_90: -1117472020
+      FD_Dreams_Doors_91: 963536956
+      FD_Dreams_Doors_92: -1500076121
+      FD_Dreams_Doors_93: -1300066384
+      FD_Dreams_Doors_94: 1904059330
+      FD_Dreams_Doors_95: 1812806248
+      FD_Dreams_Doors_96: 27474679
+      FD_Dreams_Doors_97: 1286032139
+      FD_Dreams_Doors_98: 244439739
+      FD_Dreams_Doors_99: 1105467908
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
