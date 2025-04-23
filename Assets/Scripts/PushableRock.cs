@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PushableRock : MonoBehaviour
 {
+    public string rockID = "A";
+    
     public float moveDistance = 0.16f;
     public float moveSpeed = 20f;
 
