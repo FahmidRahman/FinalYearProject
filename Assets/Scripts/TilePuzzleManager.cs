@@ -5,22 +5,32 @@ public class TilePuzzleManager : MonoBehaviour
 {
     private List<PuzzleTile> puzzleTiles = new List<PuzzleTile>();
 
-    public GameObject lockedDoor;   // Drag in the locked door object
-    public GameObject unlockedDoor; // Drag in the unlocked door object
+    public GameObject lockedDoor;
+    public GameObject unlockedDoor;
 
-    public void RegisterTile(PuzzleTile tile)
+    private void Start()
     {
-        if (!puzzleTiles.Contains(tile))
-            puzzleTiles.Add(tile);
+        // Auto-register all child PuzzleTiles
+        foreach (Transform child in transform)
+        {
+            PuzzleTile tile = child.GetComponent<PuzzleTile>();
+            if (tile != null)
+            {
+                puzzleTiles.Add(tile);
+                tile.AssignManager(this); // let the tile know who its manager is
+            }
+        }
+
+        if (unlockedDoor != null)
+            unlockedDoor.SetActive(false);
     }
 
     public void ResetPuzzle()
     {
         foreach (PuzzleTile tile in puzzleTiles)
-        {
             tile.ResetTile();
-        }
-        Debug.Log("Puzzle reset!");
+
+        Debug.Log("Puzzle reset for group: " + gameObject.name);
     }
 
     public void CheckForCompletion()
@@ -31,7 +41,7 @@ public class TilePuzzleManager : MonoBehaviour
                 return;
         }
 
-        Debug.Log("Puzzle complete!");
+        Debug.Log("Puzzle complete for group: " + gameObject.name);
         SwapDoors();
     }
 
