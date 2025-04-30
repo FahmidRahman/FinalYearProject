@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3737511966636584362}
   m_Layer: 0
   m_Name: downHitbox
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,14 +78,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.03779292, y: -0.16705179}
-      - {x: -0.036504984, y: -0.16517961}
-      - {x: -0.08086854, y: -0.13752648}
-      - {x: -0.067926586, y: -0.2205733}
-      - {x: -0.015197039, y: -0.24560785}
-      - {x: 0.094373345, y: -0.24470794}
-      - {x: 0.13953876, y: -0.15746069}
-      - {x: 0.12157464, y: -0.11095184}
+    - - {x: 0.010212287, y: -0.105047725}
+      - {x: -0.08731674, y: -0.11079541}
+      - {x: -0.07515502, y: -0.25026923}
+      - {x: 0.07922836, y: -0.24910599}
+      - {x: 0.08035961, y: -0.10356758}
   m_UseDelaunayMesh: 0
 --- !u!1 &4241859997354332299
 GameObject:
@@ -98,10 +95,10 @@ GameObject:
   - component: {fileID: 1051667674923132136}
   - component: {fileID: 7201347602359991616}
   - component: {fileID: 9206033183837786213}
-  - component: {fileID: 3939707256833531549}
   - component: {fileID: 3945785042544759089}
   - component: {fileID: 4680290688829293782}
   - component: {fileID: 424453088550165861}
+  - component: {fileID: 284573356970726945}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -166,7 +163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1455176695
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 4334783836991956000, guid: 4476275b1243745d4bf46913beb8b96b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -191,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: 0}
+  m_Actions: {fileID: -944628639613478452, guid: 4f0796c3056e741aaab49a9e26a2350b, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -206,38 +203,9 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &3939707256833531549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4241859997354332299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b99f9c60ae3594fddaa92550a6ffbf61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  movementFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 1
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  collisionOffset: 0.01
-  startingPosition: {fileID: 0}
 --- !u!50 &3945785042544759089
 Rigidbody2D:
   serializedVersion: 4
@@ -246,25 +214,25 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4241859997354332299}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 7a078caf8c4d74de899fd1c922d7c8d5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4680290688829293782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -299,7 +267,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.002957344, y: -0.15525551}
+  m_Offset: {x: 0.0054418556, y: -0.14990073}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -309,7 +277,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.11527243, y: 0.022283643}
+  m_Size: {x: 0.11030341, y: 0.05331391}
   m_EdgeRadius: 0
 --- !u!95 &424453088550165861
 Animator:
@@ -333,6 +301,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &284573356970726945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241859997354332299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a420c6082ee4560b06481ebabb0b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  movementFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  collisionOffset: 0.05
+  startingPosition: {fileID: 11400000, guid: 1b4c4ab150e8d4f4f8e921d4a8d273ba, type: 2}
+  slideSpeed: 1.8
 --- !u!1 &4614320030261298442
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,9 +341,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4805874698525170616}
   - component: {fileID: 7673616553530763337}
+  - component: {fileID: 1781906412502427109}
   m_Layer: 0
   m_Name: xHitbox
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,16 +410,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.14331508, y: -0.21760452}
-      - {x: -0.033908606, y: -0.21676505}
-      - {x: -0.07570171, y: -0.16039944}
-      - {x: 0.06062311, y: -0.15664682}
-      - {x: 0.0630489, y: -0.07238948}
-      - {x: 0.0048794746, y: -0.0046898127}
-      - {x: 0.08959329, y: -0.022910595}
-      - {x: 0.18925166, y: -0.04464972}
-      - {x: 0.17797995, y: -0.1855219}
+    - - {x: 0.059979063, y: -0.024562664}
+      - {x: 0.01924131, y: -0.02479025}
+      - {x: 0.023883142, y: -0.15181729}
+      - {x: 0.15201296, y: -0.15243666}
+      - {x: 0.15315793, y: -0.025501609}
   m_UseDelaunayMesh: 0
+--- !u!114 &1781906412502427109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4614320030261298442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e580b0a838a4e6893edfbbf8a7354e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftOffset: 0.15
 --- !u!1 &5713007932281856784
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +441,7 @@ GameObject:
   - component: {fileID: 3154846527094344953}
   m_Layer: 0
   m_Name: upHitbox
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -499,12 +507,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.04639721, y: -0.13072288}
-      - {x: -0.037460804, y: -0.12693858}
-      - {x: -0.123889506, y: -0.12987825}
-      - {x: -0.10903543, y: -0.03701663}
-      - {x: -0.048657894, y: 0.0316391}
-      - {x: 0.06091249, y: 0.02584672}
-      - {x: 0.110857725, y: -0.02170527}
-      - {x: 0.12157464, y: -0.16640133}
+    - - {x: 0.0037717968, y: 0.01552029}
+      - {x: -0.10133504, y: 0.011279501}
+      - {x: -0.09228389, y: -0.11703629}
+      - {x: 0.0739117, y: -0.11560819}
+      - {x: 0.075330205, y: 0.014023393}
   m_UseDelaunayMesh: 0
