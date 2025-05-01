@@ -123613,15 +123613,15 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1b4c4ab150e8d4f4f8e921d4a8d273ba, type: 2}
     - target: {fileID: 6028306078468790670, guid: 5a3e99d9dea734d439c617d59829f6d9, type: 3}
       propertyPath: sceneBuildIndex
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6028306078468790670, guid: 5a3e99d9dea734d439c617d59829f6d9, type: 3}
       propertyPath: playerPosition.x
-      value: -1.449
+      value: -17.518
       objectReference: {fileID: 0}
     - target: {fileID: 6028306078468790670, guid: 5a3e99d9dea734d439c617d59829f6d9, type: 3}
       propertyPath: playerPosition.y
-      value: 0.056
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 8967882255644740262, guid: 5a3e99d9dea734d439c617d59829f6d9, type: 3}
       propertyPath: m_Size.x

@@ -26,5 +26,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/winterVillage.unity
     guid: eae8fda4a44594ee1a09006641be6d70
+  - enabled: 1
+    path: Assets/Scenes/desertVillage.unity
+    guid: 1d03c524adc0a431f9494eaa6fed3cc3
+  - enabled: 1
+    path: Assets/Scenes/Dungeon2.unity
+    guid: cf3a56ca5555047268fbbabbd0c15113
+  - enabled: 1
+    path: Assets/Scenes/Dungeon3.unity
+    guid: 5891e7eadaf374a16835686f3ef24058
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9759b2d5e24ab471aa3a1e7d4667de8c
+  - enabled: 1
+    path: Assets/Scenes/route2.unity
+    guid: 6094f6ec04d7848ebaa47260edc138f3
+  - enabled: 1
+    path: Assets/Scenes/winterVillageDefeated.unity
+    guid: a5644582e51fe4033a0071b8227150a8
+  - enabled: 1
+    path: Assets/Scenes/desertVillageDefeated.unity
+    guid: 61469d421aad04484ab15c10f7d2651e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
