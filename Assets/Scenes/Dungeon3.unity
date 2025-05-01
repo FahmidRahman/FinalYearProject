@@ -5543,7 +5543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5206547358129997303, guid: 956f175c6514141638d1ce1c9be0935f, type: 3}
       propertyPath: chaseRadius
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6974338239715440247, guid: 956f175c6514141638d1ce1c9be0935f, type: 3}
       propertyPath: m_Sprite
