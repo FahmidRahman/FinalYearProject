@@ -47,5 +47,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/desertVillageDefeated.unity
     guid: 61469d421aad04484ab15c10f7d2651e
+  - enabled: 1
+    path: Assets/Scenes/route3.unity
+    guid: e5a110c53daf4407ba4bc7d95d600645
+  - enabled: 1
+    path: Assets/Scenes/dreamVillage.unity
+    guid: ba1b408cfebec488bab5894595b38e39
+  - enabled: 1
+    path: Assets/Scenes/dreamVillageDefeated.unity
+    guid: 52d47cab4ce4645c7b01e5620aec0ea1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
