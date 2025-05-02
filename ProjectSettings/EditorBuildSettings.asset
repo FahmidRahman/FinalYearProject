@@ -56,5 +56,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/dreamVillageDefeated.unity
     guid: 52d47cab4ce4645c7b01e5620aec0ea1
+  - enabled: 1
+    path: Assets/Scenes/homeVillage2.unity
+    guid: 98b63f4d371d740e481823502ac82073
+  - enabled: 1
+    path: Assets/Scenes/endgame.unity
+    guid: 6101755eda4994050aad6cbd28932088
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

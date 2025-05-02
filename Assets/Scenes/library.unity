@@ -1768,7 +1768,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1b4c4ab150e8d4f4f8e921d4a8d273ba, type: 2}
     - target: {fileID: 6028306078468790670, guid: 5a3e99d9dea734d439c617d59829f6d9, type: 3}
       propertyPath: sceneBuildIndex
-      value: 1
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6028306078468790670, guid: 5a3e99d9dea734d439c617d59829f6d9, type: 3}
       propertyPath: playerPosition.x

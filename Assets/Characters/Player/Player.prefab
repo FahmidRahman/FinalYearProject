@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 4680290688829293782}
   - component: {fileID: 424453088550165861}
   - component: {fileID: 284573356970726945}
+  - component: {fileID: 107434052773565540}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -331,6 +332,34 @@ MonoBehaviour:
   collisionOffset: 0.05
   startingPosition: {fileID: 11400000, guid: 1b4c4ab150e8d4f4f8e921d4a8d273ba, type: 2}
   slideSpeed: 1.8
+--- !u!114 &107434052773565540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241859997354332299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc8d2afbefb40c787def097bdf22e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHearts: 5
+  currentHearts: 5
+  heartImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: -4430392651179603617, guid: 9907b2b6880ec4826aeb7d1325a430aa, type: 3}
+  emptyHeart: {fileID: -9053378900703536071, guid: 9907b2b6880ec4826aeb7d1325a430aa, type: 3}
+  regenInterval: 30
+  checkpoint: {fileID: 0}
+  player: {fileID: 4241859997354332299}
+  deathAnimationDuration: 1
+  invulnerabilityDuration: 2
+  invulnerable: 0
 --- !u!1 &4614320030261298442
 GameObject:
   m_ObjectHideFlags: 0
