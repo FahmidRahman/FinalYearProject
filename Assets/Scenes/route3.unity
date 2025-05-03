@@ -108911,6 +108911,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4642046574098812635, guid: b532bd06aa5fa4405a067f83e463fb5a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 307425759}
+    - target: {fileID: 4642046574098812635, guid: b532bd06aa5fa4405a067f83e463fb5a, type: 3}
+      propertyPath: resetTarget
+      value: 
+      objectReference: {fileID: 473452607}
+    - target: {fileID: 6227595307839832291, guid: b532bd06aa5fa4405a067f83e463fb5a, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6984353921979509427, guid: b532bd06aa5fa4405a067f83e463fb5a, type: 3}
       propertyPath: m_Name
       value: heartsCanvas
